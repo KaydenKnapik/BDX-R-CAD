@@ -585,8 +585,8 @@
   <origin xyz="-0.018751 -0.04527 -0.0025" rpy="0 0 0"/>
   <parent link="Left_Hip_Yaw_Motor"/>
   <child link="Left_Hip_Roll_Motor"/>
-  <axis xyz="0.0 0.0 -1.0"/>
-  <limit lower="-0.5" upper="0.35" effort="60" velocity="20"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit lower="-0.35" upper="0.5" effort="60" velocity="20"/>
 
 </joint>
 
