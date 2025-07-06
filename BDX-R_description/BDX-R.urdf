@@ -1,0 +1,643 @@
+<?xml version="1.0" ?>
+<robot name="BDX-R">
+
+<xacro:include filename="$(find BDX-R_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find BDX-R_description)/urdf/BDX-R.trans" />
+<xacro:include filename="$(find BDX-R_description)/urdf/BDX-R.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.00038574542547068836 0.08913756101435802 0.012289291517595658" rpy="0 0 0"/>
+    <mass value="1.9551413921032492"/>
+    <inertia ixx="0.016996" iyy="0.013091" izz="0.010862" ixy="5.2e-05" iyz="-5.6e-05" ixz="-5.5e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Hip_Pitch_Motor">
+  <inertial>
+    <origin xyz="-0.023752059015010568 -5.6717319653107334e-05 -1.9815031954806273e-05" rpy="0 0 0"/>
+    <mass value="0.9104522697583138"/>
+    <inertia ixx="0.001215" iyy="0.000918" izz="0.00088" ixy="-1e-06" iyz="1e-06" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.13375 -0.103647 0.018999" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.13375 -0.103647 0.018999" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Hip_Connector">
+  <inertial>
+    <origin xyz="-0.03466218270173155 -0.0020962851061517435 0.0012716373796295005" rpy="0 0 0"/>
+    <mass value="0.15534729534247135"/>
+    <inertia ixx="8e-05" iyy="0.000175" izz="0.000167" ixy="3.2e-05" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0625 -0.095 0.02034" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0625 -0.095 0.02034" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Hip_Yaw_Motor">
+  <inertial>
+    <origin xyz="0.0187313753807486 -0.04532641704186141 0.021252177202019717" rpy="0 0 0"/>
+    <mass value="0.9104522697579285"/>
+    <inertia ixx="0.00088" iyy="0.000918" izz="0.001215" ixy="1e-06" iyz="1e-06" ixz="-6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.068751 -0.15827 -0.046444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.068751 -0.15827 -0.046444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Hip_Roll_Motor">
+  <inertial>
+    <origin xyz="-0.007793161893849411 0.0030650121546462877 -0.05898036822398163" rpy="0 0 0"/>
+    <mass value="1.0713531089572514"/>
+    <inertia ixx="0.002143" iyy="0.002346" izz="0.000907" ixy="1.3e-05" iyz="1.9e-05" ixz="-5.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.05 -0.113 -0.043944" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.05 -0.113 -0.043944" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Upper_Leg">
+  <inertial>
+    <origin xyz="-0.011864861346885552 0.06249320592578135 -0.07881603105035866" rpy="0 0 0"/>
+    <mass value="0.5042346187696303"/>
+    <inertia ixx="0.002186" iyy="0.001257" izz="0.001332" ixy="-1e-05" iyz="0.000499" ixz="9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.13625 -0.084961 -0.026298" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.13625 -0.084961 -0.026298" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Knee_Motor">
+  <inertial>
+    <origin xyz="-0.021252059051225153 -2.0118454967271715e-05 5.582546554200318e-05" rpy="0 0 0"/>
+    <mass value="0.9104522723338447"/>
+    <inertia ixx="0.001215" iyy="0.00088" izz="0.000918" ixy="6e-06" iyz="-1e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.13625 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.13625 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Lower_Leg">
+  <inertial>
+    <origin xyz="0.021155158736516966 -0.01237817689965015 -0.06537274353506987" rpy="0 0 0"/>
+    <mass value="0.3868176513234967"/>
+    <inertia ixx="0.001535" iyy="0.001229" izz="0.000412" ixy="2e-05" iyz="-0.000323" ixz="6.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.13375 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.13375 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Foot">
+  <inertial>
+    <origin xyz="0.010703028112624705 -0.027062036581725804 -0.0511174914786075" rpy="0 0 0"/>
+    <mass value="0.3335675718740702"/>
+    <inertia ixx="0.000915" iyy="0.000259" izz="0.000808" ixy="1.5e-05" iyz="-1.4e-05" ixz="6.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.12841 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.12841 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Ankle_Motor">
+  <inertial>
+    <origin xyz="0.01904114223699016 -0.0004977271813172979 -0.0011977681610705337" rpy="0 0 0"/>
+    <mass value="0.36575911696028485"/>
+    <inertia ixx="0.000338" iyy="0.000247" izz="0.000245" ixy="-2e-06" iyz="-7e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.12441 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.12441 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IMU_Mount">
+  <inertial>
+    <origin xyz="0.020899999952531622 -0.007580345146994488 0.013691406154351854" rpy="0 0 0"/>
+    <mass value="0.01915492960248384"/>
+    <inertia ixx="2e-06" iyy="4e-06" izz="4e-06" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0209 -0.14962 -0.110944" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IMU_Mount.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0209 -0.14962 -0.110944" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/IMU_Mount.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Battery">
+  <inertial>
+    <origin xyz="0.028499999999999998 0.04019962505023175 -0.0022853104499379745" rpy="0 0 0"/>
+    <mass value="1.0730942884373287"/>
+    <inertia ixx="0.002743" iyy="0.002821" izz="0.001123" ixy="0.0" iyz="3.4e-05" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.02875 -0.181951 -0.039796" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Battery.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.02875 -0.181951 -0.039796" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Battery.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Jetson_Mount">
+  <inertial>
+    <origin xyz="0.0041221857015065625 -0.027395722777558404 -0.06034594748970652" rpy="0 0 0"/>
+    <mass value="0.24846958841683578"/>
+    <inertia ixx="0.000499" iyy="0.000927" izz="0.000504" ixy="8e-06" iyz="1e-05" ixz="2.7e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.01 -0.010896 -0.016701" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Jetson_Mount.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.01 -0.010896 -0.016701" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Jetson_Mount.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Neck_Motor">
+  <inertial>
+    <origin xyz="-0.018247940879275594 0.02489678032386316 0.04227276371278143" rpy="0 0 0"/>
+    <mass value="0.910452277662412"/>
+    <inertia ixx="0.001215" iyy="0.000881" izz="0.000917" ixy="6e-06" iyz="6e-06" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02175 0.001404 -0.044506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02175 0.001404 -0.044506" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Hip_Yaw_Motor">
+  <inertial>
+    <origin xyz="-0.018731370476071242 -0.04521358577945919 0.021252177406161088" rpy="0 0 0"/>
+    <mass value="0.9104522842757782"/>
+    <inertia ixx="0.00088" iyy="0.000918" izz="0.001215" ixy="1e-06" iyz="-1e-06" ixz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.068751 -0.15827 -0.046444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.068751 -0.15827 -0.046444" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Hip_Roll_Motor">
+  <inertial>
+    <origin xyz="0.0077931603488040485 0.0030650118146338806 -0.05898036431232838" rpy="0 0 0"/>
+    <mass value="1.071352674987853"/>
+    <inertia ixx="0.002143" iyy="0.002346" izz="0.000907" ixy="-1.3e-05" iyz="1.9e-05" ixz="5.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.05 -0.113 -0.043944" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.05 -0.113 -0.043944" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Hip_Connector">
+  <inertial>
+    <origin xyz="0.034662182701733324 -0.002096285106151563 0.0012716373796294277" rpy="0 0 0"/>
+    <mass value="0.15534729534246716"/>
+    <inertia ixx="8e-05" iyy="0.000175" izz="0.000167" ixy="-3.2e-05" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0625 -0.095 0.02034" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0625 -0.095 0.02034" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Hip_Pitch_Motor">
+  <inertial>
+    <origin xyz="0.02375206054791429 -5.6720979166272056e-05 -1.9815783446619495e-05" rpy="0 0 0"/>
+    <mass value="0.9104515144014014"/>
+    <inertia ixx="0.001215" iyy="0.000918" izz="0.00088" ixy="1e-06" iyz="1e-06" ixz="-6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13375 -0.103647 0.018999" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13375 -0.103647 0.018999" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Upper_Leg">
+  <inertial>
+    <origin xyz="0.011864861029798168 0.062493206915064894 -0.07881603139952828" rpy="0 0 0"/>
+    <mass value="0.5042346129898978"/>
+    <inertia ixx="0.002186" iyy="0.001257" izz="0.001332" ixy="1e-05" iyz="0.000499" ixz="-9e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13625 -0.084961 -0.026298" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13625 -0.084961 -0.026298" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Knee_Motor">
+  <inertial>
+    <origin xyz="0.021252060584128984 -2.0119243643201834e-05 5.5829117221933844e-05" rpy="0 0 0"/>
+    <mass value="0.9104515169769222"/>
+    <inertia ixx="0.001215" iyy="0.00088" izz="0.000918" ixy="-6e-06" iyz="-1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13625 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13625 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Lower_Leg">
+  <inertial>
+    <origin xyz="-0.021155158736516938 -0.012378176899650206 -0.06537274353506987" rpy="0 0 0"/>
+    <mass value="0.38681765132349716"/>
+    <inertia ixx="0.001535" iyy="0.001229" izz="0.000412" ixy="-2e-05" iyz="-0.000323" ixz="-6.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.13375 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.13375 -0.18284 0.096822" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Foot">
+  <inertial>
+    <origin xyz="-0.010703028113012311 -0.027062036581888715 -0.051117491478669064" rpy="0 0 0"/>
+    <mass value="0.3335675718817209"/>
+    <inertia ixx="0.000915" iyy="0.000259" izz="0.000808" ixy="-1.5e-05" iyz="-1.4e-05" ixz="-6.2e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.12841 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.12841 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Ankle_Motor">
+  <inertial>
+    <origin xyz="-0.01904113231080172 -0.0004977274007510746 -0.0011977687729636532" rpy="0 0 0"/>
+    <mass value="0.3657589373000338"/>
+    <inertia ixx="0.000338" iyy="0.000247" izz="0.000245" ixy="2e-06" iyz="-7e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.12441 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.12441 -0.137503 0.226835" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Right_Hip_Pitch" type="revolute">
+  <origin xyz="-0.07125 0.008647 0.001341" rpy="0 0 0"/>
+  <parent link="Right_Hip_Connector"/>
+  <child link="Right_Hip_Pitch_Motor"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+  <limit lower="-1" upper="0.5" effort="60" velocity="20"/>
+</joint>
+
+<joint name="Right_Hip_Roll" type="revolute">
+  <origin xyz="-0.0125 -0.018 -0.064284" rpy="0 0 0"/>
+  <parent link="Right_Hip_Roll_Motor"/>
+  <child link="Right_Hip_Connector"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+  <limit lower="-0.3" upper="0.3" effort="60" velocity="20"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="-0.068751 0.15827 0.046444" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Right_Hip_Yaw_Motor"/>
+</joint>
+
+<joint name="Right_Hip_Yaw" type="revolute">
+  <origin xyz="0.018751 -0.04527 -0.0025" rpy="0 0 0"/>
+  <parent link="Right_Hip_Yaw_Motor"/>
+  <child link="Right_Hip_Roll_Motor"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+  <limit lower="-0.5" upper="0.35" effort="60" velocity="20"/>
+</joint>
+
+<joint name="Rigid 18" type="fixed">
+  <origin xyz="-0.0025 -0.018686 0.045297" rpy="0 0 0"/>
+  <parent link="Right_Hip_Pitch_Motor"/>
+  <child link="Right_Upper_Leg"/>
+</joint>
+
+<joint name="Rigid 20" type="fixed">
+  <origin xyz="0.0 0.097879 -0.12312" rpy="0 0 0"/>
+  <parent link="Right_Upper_Leg"/>
+  <child link="Right_Knee_Motor"/>
+</joint>
+
+<joint name="Right_Knee" type="revolute">
+  <origin xyz="0.0025 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Right_Knee_Motor"/>
+  <child link="Right_Lower_Leg"/>
+  <axis xyz="-1.0 -0.0 -0.0"/>
+  <limit lower="-1.2" upper="0.95" effort="60" velocity="20"/>
+</joint>
+
+<joint name="Right_Ankle" type="revolute">
+  <origin xyz="-0.004 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Right_Ankle_Motor"/>
+  <child link="Right_Foot"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+  <limit lower="-1.3" upper="0.85" effort="17" velocity="40"/>
+</joint>
+
+<joint name="Rigid 23" type="fixed">
+  <origin xyz="0.00934 -0.045337 -0.130013" rpy="0 0 0"/>
+  <parent link="Right_Lower_Leg"/>
+  <child link="Right_Ankle_Motor"/>
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="-0.0209 0.14962 0.110944" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IMU_Mount"/>
+</joint>
+
+<joint name="Rigid 25" type="fixed">
+  <origin xyz="-0.02875 0.181951 0.039796" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Battery"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="-0.01 0.010896 0.016701" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Jetson_Mount"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="0.02175 -0.001404 0.044506" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Neck_Motor"/>
+</joint>
+
+<joint name="Rigid 28" type="fixed">
+  <origin xyz="0.068751 0.15827 0.046444" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Left_Hip_Yaw_Motor"/>
+</joint>
+
+<joint name="Left_Hip_Yaw" type="revolute">
+  <origin xyz="-0.018751 -0.04527 -0.0025" rpy="0 0 0"/>
+  <parent link="Left_Hip_Yaw_Motor"/>
+  <child link="Left_Hip_Roll_Motor"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit lower="-0.5" upper="0.35" effort="60" velocity="20"/>
+
+</joint>
+
+<joint name="Left_Hip_Roll" type="revolute">
+  <origin xyz="0.0125 -0.018 -0.064284" rpy="0 0 0"/>
+  <parent link="Left_Hip_Roll_Motor"/>
+  <child link="Left_Hip_Connector"/>
+  <axis xyz="0.0 1.0 0.0"/>
+  <limit lower="-0.3" upper="0.3" effort="60" velocity="20"/>
+</joint>
+
+<joint name="Left_Hip_Pitch" type="revolute">
+  <origin xyz="0.07125 0.008647 0.001341" rpy="0 0 0"/>
+  <parent link="Left_Hip_Connector"/>
+  <child link="Left_Hip_Pitch_Motor"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit lower="-0.5" upper="1" effort="60" velocity="20"/>
+</joint>
+
+<joint name="Rigid 32" type="fixed">
+  <origin xyz="0.0025 -0.018686 0.045297" rpy="0 0 0"/>
+  <parent link="Left_Hip_Pitch_Motor"/>
+  <child link="Left_Upper_Leg"/>
+</joint>
+
+<joint name="Rigid 33" type="fixed">
+  <origin xyz="0.0 0.097879 -0.12312" rpy="0 0 0"/>
+  <parent link="Left_Upper_Leg"/>
+  <child link="Left_Knee_Motor"/>
+</joint>
+
+<joint name="Left_Knee" type="revolute">
+  <origin xyz="-0.0025 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Left_Knee_Motor"/>
+  <child link="Left_Lower_Leg"/>
+  <axis xyz="1.0 0.0 0.0"/>
+  <limit lower="-0.95" upper="1.2" effort="60" velocity="20"/>
+</joint>
+
+<joint name="Left_Ankle" type="revolute">
+  <origin xyz="0.004 0.0 0.0" rpy="0 0 0"/>
+  <parent link="Left_Ankle_Motor"/>
+  <child link="Left_Foot"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+  <limit lower="-0.85" upper="1.3" effort="17" velocity="40"/>
+</joint>
+
+<joint name="Rigid 34" type="fixed">
+  <origin xyz="-0.00934 -0.045337 -0.130013" rpy="0 0 0"/>
+  <parent link="Left_Lower_Leg"/>
+  <child link="Left_Ankle_Motor"/>
+</joint>
+
+</robot>
