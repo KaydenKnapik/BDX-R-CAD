@@ -1,0 +1,190 @@
+<mujoco model="BDX-R">
+  <option iterations="50" timestep="0.001" solver="PGS" gravity="0 0 -9.81" />
+
+  <compiler angle="radian" meshdir="meshes" eulerseq="zyx" autolimits="true" />
+
+  <default>
+    <joint limited="true" damping="0.01" armature="0.01" frictionloss="0.01" />
+    <geom condim="4" contype="1" conaffinity="15" friction="0.9 0.2 0.2" solref="0.001 2" />
+    <motor ctrllimited="true" />
+    <equality solref="0.001 2" />
+    <default class="visualgeom">
+      <geom material="visualgeom" condim="1" contype="0" conaffinity="0" />
+    </default>
+  </default>
+
+  <asset>
+    <mesh name="base_link" file="base_link.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Hip_Pitch_Motor" file="Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Hip_Connector" file="Right_Hip_Connector.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Hip_Yaw_Motor" file="Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Hip_Roll_Motor" file="Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Upper_Leg" file="Right_Upper_Leg.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Knee_Motor" file="Right_Knee_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Lower_Leg" file="Right_Lower_Leg.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Foot" file="Right_Foot.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Right_Ankle_Motor" file="Right_Ankle_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="IMU_Mount" file="IMU_Mount.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Battery" file="Battery.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Jetson_Mount" file="Jetson_Mount.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Neck_Motor" file="Neck_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Hip_Yaw_Motor" file="Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Hip_Roll_Motor" file="Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Hip_Connector" file="Left_Hip_Connector.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Hip_Pitch_Motor" file="Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Upper_Leg" file="Left_Upper_Leg.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Knee_Motor" file="Left_Knee_Motor.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Lower_Leg" file="Left_Lower_Leg.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Foot" file="Left_Foot.stl" scale="0.001 0.001 0.001" />
+    <mesh name="Left_Ankle_Motor" file="Left_Ankle_Motor.stl" scale="0.001 0.001 0.001" />
+    <texture name="texplane" type="2d" builtin="checker" rgb1=".0 .0 .0" rgb2=".8 .8 .8" width="100" height="100" />
+    <material name="matplane" reflectance="0." texture="texplane" texrepeat="1 1" texuniform="true" />
+    <material name="visualgeom" rgba="0.5 0.9 0.2 1" />
+  </asset>
+
+  <worldbody>
+    <light directional="true" diffuse="0.4 0.4 0.4" specular="0.1 0.1 0.1" pos="0 0 5.0" dir="0 0 -1" castshadow="false" />
+    <light directional="true" diffuse="0.6 0.6 0.6" specular="0.2 0.2 0.2" pos="0 0 4" dir="0 0 -1" />
+    <geom name="ground" type="plane" pos="0 0 0" size="100 100 0.001" quat="1 0 0 0" material="matplane" condim="3" conaffinity="15" />
+    <camera name="fixed" pos="0 -3.0 0.8633906721611626" xyaxes="1 0 0 0 0 1" />
+    <camera name="track" mode="trackcom" pos="0 -3.0 0.8633906721611626" xyaxes="1 0 0 0 0 1" />
+    <body name="root" pos="0 0 0.36339067216116255" quat="1 0 0 0">
+      <freejoint name="root" />
+      <site name="imu" size="0.01" pos="0 0 0" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="base_link" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="base_link" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Yaw_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Yaw_Motor" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="IMU_Mount" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="IMU_Mount" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Battery" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Battery" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Jetson_Mount" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Jetson_Mount" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Neck_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Neck_Motor" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Yaw_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+      <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Yaw_Motor" />
+      <body name="Right_Hip_Roll_Motor" pos="-0.05 0.113 0.043944">
+        <inertial pos="-0.00779316 0.00306501 -0.0589804" quat="0.728008 0.0196382 0.0109747 0.685199" mass="1.07135" diaginertia="0.002347 0.00214453 0.000904467" />
+        <joint name="Right_Hip_Yaw" pos="0 0 0" axis="0 0 1" range="-0.5 0.35" actuatorfrcrange="-60 60" />
+        <geom pos="0.05 -0.113 -0.043944" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Roll_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+        <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Roll_Motor" pos="0.05 -0.113 -0.043944" quat="1 0 0 0" />
+        <body name="Right_Hip_Connector" pos="-0.0125 -0.018 -0.064284">
+          <inertial pos="-0.0346622 -0.00209629 0.00127164" quat="0.562074 0.574604 0.418056 0.423241" mass="0.155347" diaginertia="0.000184778 0.000167005 7.02171e-05" />
+          <joint name="Right_Hip_Roll" pos="0 0 0" axis="0 1 0" range="-0.3 0.3" actuatorfrcrange="-60 60" />
+          <geom pos="0.0625 -0.095 0.02034" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Connector" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+          <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Connector" pos="0.0625 -0.095 0.02034" quat="1 0 0 0" />
+          <body name="Right_Hip_Pitch_Motor" pos="-0.07125 0.008647 0.001341">
+            <inertial pos="-0.0217163 0.0404796 -0.037728" quat="0.921257 0.38886 0.00259951 -0.00821224" mass="2.32514" diaginertia="0.0102441 0.00923622 0.00264588" />
+            <joint name="Right_Hip_Pitch" pos="0 0 0" axis="-1 0 0" range="-1 0.5" actuatorfrcrange="-60 60" />
+            <geom pos="0.13375 -0.103647 0.018999" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Pitch_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+            <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Hip_Pitch_Motor" pos="0.13375 -0.103647 0.018999" quat="1 0 0 0" />
+            <geom pos="0.13375 -0.103647 0.018999" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Upper_Leg" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+            <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Upper_Leg" pos="0.13375 -0.103647 0.018999" quat="1 0 0 0" />
+            <geom pos="0.13375 -0.103647 0.018999" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Knee_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+            <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Knee_Motor" pos="0.13375 -0.103647 0.018999" quat="1 0 0 0" />
+            <body name="Right_Lower_Leg" pos="0 0.079193 -0.077823">
+              <inertial pos="0.0246671 -0.0286384 -0.0973706" quat="0.979096 -0.2002 -0.0358441 0.00257709" mass="0.752577" diaginertia="0.00291034 0.00261864 0.00054731" />
+              <joint name="Right_Knee" pos="0 0 0" axis="-1 0 0" range="-1.2 0.95" actuatorfrcrange="-60 60" />
+              <geom pos="0.13375 -0.18284 0.096822" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Lower_Leg" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+              <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Lower_Leg" pos="0.13375 -0.18284 0.096822" />
+              <geom pos="0.13375 -0.18284 0.096822" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Ankle_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+              <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Ankle_Motor" pos="0.13375 -0.18284 0.096822" />
+              <body name="Right_Foot" pos="0.00534 -0.045337 -0.130013">
+                <inertial pos="0.010703 -0.027062 -0.0511175" quat="0.679159 0.70256 -0.143422 0.156789" mass="0.333568" diaginertia="0.000943481 0.000780298 0.00025822" />
+                <joint name="Right_Ankle" pos="0 0 0" axis="1 0 0" range="-1.3 0.85" actuatorfrcrange="-17 17" />
+                <geom pos="0.12841 -0.137503 0.226835" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Foot" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+                <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Right_Foot" pos="0.12841 -0.137503 0.226835" quat="1 0 0 0" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="Left_Hip_Roll_Motor" pos="0.05 0.113 0.043944">
+        <inertial pos="0.00779316 0.00306501 -0.0589804" quat="0.685199 -0.0109747 -0.0196382 0.728008" mass="1.07135" diaginertia="0.002347 0.00214453 0.000904467" />
+        <joint name="Left_Hip_Yaw" pos="0 0 0" axis="0 0 1" range="-0.35 0.5" actuatorfrcrange="-60 60" />
+        <geom pos="-0.05 -0.113 -0.043944" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Roll_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+        <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Roll_Motor" pos="-0.05 -0.113 -0.043944" quat="1 0 0 0" />
+        <body name="Left_Hip_Connector" pos="0.0125 -0.018 -0.064284">
+          <inertial pos="0.0346622 -0.00209629 0.00127164" quat="0.418056 0.423241 0.562074 0.574604" mass="0.155347" diaginertia="0.000184778 0.000167005 7.02171e-05" />
+          <joint name="Left_Hip_Roll" pos="0 0 0" axis="0 1 0" range="-0.3 0.3" actuatorfrcrange="-60 60" />
+          <geom pos="-0.0625 -0.095 0.02034" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Connector" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+          <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Connector" pos="-0.0625 -0.095 0.02034" quat="1 0 0 0" />
+          <body name="Left_Hip_Pitch_Motor" pos="0.07125 0.008647 0.001341">
+            <inertial pos="0.0217163 0.0404796 -0.037728" quat="0.921257 0.38886 -0.00259951 0.00821224" mass="2.32514" diaginertia="0.0102441 0.00923622 0.00264588" />
+            <joint name="Left_Hip_Pitch" pos="0 0 0" axis="1 0 0" range="-0.5 1" actuatorfrcrange="-60 60" />
+            <geom pos="-0.13375 -0.103647 0.018999" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Pitch_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+            <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Hip_Pitch_Motor" pos="-0.13375 -0.103647 0.018999" />
+            <geom pos="-0.13375 -0.103647 0.018999" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Upper_Leg" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+            <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Upper_Leg" pos="-0.13375 -0.103647 0.018999" quat="1 0 0 0" />
+            <geom pos="-0.13375 -0.103647 0.018999" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Knee_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+            <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Knee_Motor" pos="-0.13375 -0.103647 0.018999" quat="1 0 0 0" />
+            <body name="Left_Lower_Leg" pos="0 0.079193 -0.077823">
+              <inertial pos="-0.024667 -0.0286384 -0.0973706" quat="0.979096 -0.2002 0.0358441 -0.00257707" mass="0.752577" diaginertia="0.00291034 0.00261864 0.00054731" />
+              <joint name="Left_Knee" pos="0 0 0" axis="1 0 0" range="-0.95 1.2" actuatorfrcrange="-60 60" />
+              <geom pos="-0.13375 -0.18284 0.096822" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Lower_Leg" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+              <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Lower_Leg" pos="-0.13375 -0.18284 0.096822" />
+              <geom pos="-0.13375 -0.18284 0.096822" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Ankle_Motor" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+              <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Ankle_Motor" pos="-0.13375 -0.18284 0.096822" quat="1 0 0 0" />
+              <body name="Left_Foot" pos="-0.00534 -0.045337 -0.130013">
+                <inertial pos="-0.010703 -0.027062 -0.0511175" quat="0.679159 0.70256 0.143422 -0.156789" mass="0.333568" diaginertia="0.000943481 0.000780298 0.00025822" />
+                <joint name="Left_Ankle" pos="0 0 0" axis="-1 0 0" range="-0.85 1.3" actuatorfrcrange="-17 17" />
+                <geom pos="-0.12841 -0.137503 0.226835" quat="1 0 0 0" type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Foot" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
+                <geom type="mesh" rgba="0.75 0.75 0.75 1" mesh="Left_Foot" pos="-0.12841 -0.137503 0.226835" quat="1 0 0 0" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <motor name="Right_Hip_Yaw" joint="Right_Hip_Yaw" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Right_Hip_Roll" joint="Right_Hip_Roll" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Right_Hip_Pitch" joint="Right_Hip_Pitch" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Right_Knee" joint="Right_Knee" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Right_Ankle" joint="Right_Ankle" ctrllimited="true" ctrlrange="-17 17" gear="1" />
+    <motor name="Left_Hip_Yaw" joint="Left_Hip_Yaw" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Left_Hip_Roll" joint="Left_Hip_Roll" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Left_Hip_Pitch" joint="Left_Hip_Pitch" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Left_Knee" joint="Left_Knee" ctrllimited="true" ctrlrange="-60 60" gear="1" />
+    <motor name="Left_Ankle" joint="Left_Ankle" ctrllimited="true" ctrlrange="-17 17" gear="1" />
+  </actuator>
+
+  <sensor>
+    <actuatorpos name="Right_Hip_Yaw_p" actuator="Right_Hip_Yaw" />
+    <actuatorvel name="Right_Hip_Yaw_v" actuator="Right_Hip_Yaw" />
+    <actuatorfrc name="Right_Hip_Yaw_f" actuator="Right_Hip_Yaw" noise="0.001" />
+    <actuatorpos name="Right_Hip_Roll_p" actuator="Right_Hip_Roll" />
+    <actuatorvel name="Right_Hip_Roll_v" actuator="Right_Hip_Roll" />
+    <actuatorfrc name="Right_Hip_Roll_f" actuator="Right_Hip_Roll" noise="0.001" />
+    <actuatorpos name="Right_Hip_Pitch_p" actuator="Right_Hip_Pitch" />
+    <actuatorvel name="Right_Hip_Pitch_v" actuator="Right_Hip_Pitch" />
+    <actuatorfrc name="Right_Hip_Pitch_f" actuator="Right_Hip_Pitch" noise="0.001" />
+    <actuatorpos name="Right_Knee_p" actuator="Right_Knee" />
+    <actuatorvel name="Right_Knee_v" actuator="Right_Knee" />
+    <actuatorfrc name="Right_Knee_f" actuator="Right_Knee" noise="0.001" />
+    <actuatorpos name="Right_Ankle_p" actuator="Right_Ankle" />
+    <actuatorvel name="Right_Ankle_v" actuator="Right_Ankle" />
+    <actuatorfrc name="Right_Ankle_f" actuator="Right_Ankle" noise="0.001" />
+    <actuatorpos name="Left_Hip_Yaw_p" actuator="Left_Hip_Yaw" />
+    <actuatorvel name="Left_Hip_Yaw_v" actuator="Left_Hip_Yaw" />
+    <actuatorfrc name="Left_Hip_Yaw_f" actuator="Left_Hip_Yaw" noise="0.001" />
+    <actuatorpos name="Left_Hip_Roll_p" actuator="Left_Hip_Roll" />
+    <actuatorvel name="Left_Hip_Roll_v" actuator="Left_Hip_Roll" />
+    <actuatorfrc name="Left_Hip_Roll_f" actuator="Left_Hip_Roll" noise="0.001" />
+    <actuatorpos name="Left_Hip_Pitch_p" actuator="Left_Hip_Pitch" />
+    <actuatorvel name="Left_Hip_Pitch_v" actuator="Left_Hip_Pitch" />
+    <actuatorfrc name="Left_Hip_Pitch_f" actuator="Left_Hip_Pitch" noise="0.001" />
+    <actuatorpos name="Left_Knee_p" actuator="Left_Knee" />
+    <actuatorvel name="Left_Knee_v" actuator="Left_Knee" />
+    <actuatorfrc name="Left_Knee_f" actuator="Left_Knee" noise="0.001" />
+    <actuatorpos name="Left_Ankle_p" actuator="Left_Ankle" />
+    <actuatorvel name="Left_Ankle_v" actuator="Left_Ankle" />
+    <actuatorfrc name="Left_Ankle_f" actuator="Left_Ankle" noise="0.001" />
+    <framequat name="orientation" objtype="site" noise="0.001" objname="imu" />
+    <gyro name="angular-velocity" site="imu" noise="0.005" cutoff="34.9" />
+  </sensor>
+</mujoco>

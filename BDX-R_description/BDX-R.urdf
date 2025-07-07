@@ -1,9 +1,15 @@
 <?xml version="1.0" ?>
 <robot name="BDX-R">
 
-<xacro:include filename="$(find BDX-R_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find BDX-R_description)/urdf/BDX-R.trans" />
-<xacro:include filename="$(find BDX-R_description)/urdf/BDX-R.gazebo" />
+<!-- 
+  The xacro includes have been removed and the material definition
+  has been added directly into this file. This makes it a plain URDF
+  that can be parsed by urdf2mjcf.
+-->
+<material name="silver">
+  <color rgba="0.75 0.75 0.75 1.0"/>
+</material>
+
 <link name="base_link">
   <inertial>
     <origin xyz="0.00038574542547068836 0.08913756101435802 0.012289291517595658" rpy="0 0 0"/>
