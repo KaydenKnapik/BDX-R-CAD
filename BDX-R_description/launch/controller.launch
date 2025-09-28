@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find BDX-R_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="BDX-R" args="Right_Hip_Yaw_position_controller Left_Hip_Yaw_position_controller Right_Hip_Roll_position_controller Left_Hip_Roll_position_controller Right_Hip_Pitch_position_controller Right_Knee_position_controller Right_Ankle_position_controller Left_Hip_Pitch_position_controller Left_Knee_position_controller Left_Ankle_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/BDX-R/joint_states"/>
+</node>
+
+</launch>
