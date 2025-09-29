@@ -1,0 +1,186 @@
+<mujoco model="BDX-R">
+  <compiler angle="radian" meshdir="meshes"/>
+
+  <default>
+    <default class="visual">
+      <geom group="2" 
+            type="mesh" 
+            density="0" 
+            material="silver" 
+            contype="0" 
+            conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3"
+            contype="1"
+            conaffinity="1"
+            material="bright_orange_transparent"/>
+    </default>
+  </default>
+
+  <asset>
+    <material name="bright_orange_transparent" rgba="1 0.5 0 0.3"/>
+    <material name="silver" rgba="0.7 0.7 0.7 1"/>
+    <!-- TODO: Merge fixed meshes together -->
+    <!-- TODO: Scale the meshes from start -->
+    <!-- TODO: Reuse meshes that can be flipped (we shall have 4 meshes at most withouth the head) -->
+    <!-- TODO: Use sites for imu/others sensors -->
+    <mesh file="base_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="BottomCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="BackFrame.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="BackCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="FrontCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="TopLeftCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="TopRightCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="IMU_Mount.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Jetson_Mount.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Neck_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Battery.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Antenna.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="AntennaBox.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="RightAnkleCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Right_Foot.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="RightFootPad.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="RightFootCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="RightBottomLegCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="RightUpperLegCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="RightLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="RightLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="Left_Foot.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="LeftFootPad.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="LeftFootCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="LeftAnkleCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="LeftBottomLegCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="LeftUpperLegCover.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="LeftLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
+    <mesh file="LeftLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+
+  <worldbody>
+  <body name="base_link" pos="0.0 0.0 0.0">
+    <joint type="free" name="free_joint"/>
+    <geom class="visual" mesh="base_link"/>
+    <geom class="visual" mesh="Right_Hip_Yaw_Motor"/>
+    <geom class="visual" mesh="Left_Hip_Yaw_Motor"/>
+    <geom class="visual" mesh="BottomCover"/>
+    <geom class="collision" name="base_link_collision" type="capsule" fromto="0.1 0.0875 0.015   -0.1 0.0875 0.015" size="0.12" />
+    <geom class="visual" mesh="BackFrame"/>
+    <geom class="visual" mesh="BackCover"/>
+    <geom class="visual" mesh="Antenna"/>
+    <geom class="visual" mesh="AntennaBox"/>
+    <geom class="visual" mesh="FrontCover"/>
+    <geom class="visual" mesh="TopLeftCover"/>
+    <geom class="visual" mesh="TopRightCover"/>
+    <geom class="visual" mesh="IMU_Mount"/>
+    <geom class="visual" mesh="Jetson_Mount"/>
+    <geom class="visual" mesh="Neck_Motor"/>
+    <geom class="visual" mesh="Battery"/>
+    <body name="Right_Hip_Roll_Motor" pos="-0.025798 0.037202 0.043944">
+      <inertial pos="-0.00306484 -0.00779299 -0.0589804" quat="0.999289 -0.0216466 0.00612604 -0.0302708" mass="1.07135" diaginertia="0.002347 0.00214453 0.000904467"/>
+      <joint name="Right_Hip_Yaw" axis="0 0 1" range="-0.5 0.35" actuatorfrcrange="-42 42"/>
+      <geom pos="0.025798 -0.037202 -0.043944" class="visual" mesh="Right_Hip_Roll_Motor"/>
+      <body name="Right_Hip_Connector" pos="0.018 -0.0125 -0.064284">
+        <inertial pos="0.00209646 -0.034662 0.00127164" quat="0.701917 0.696723 -0.0981694 -0.110696" mass="0.155347" diaginertia="0.000184778 0.000167005 7.02171e-05"/>
+        <joint name="Right_Hip_Roll" axis="-1 0 0" range="-0.3 0.3" actuatorfrcrange="-42 42"/>
+        <geom pos="0.007798 -0.024702 0.02034" class="visual" mesh="Right_Hip_Connector"/>
+        <body name="Right_Hip_Pitch_Motor" pos="-0.008647 -0.07125 0.001341">
+          <inertial pos="-0.040231 -0.0321881 -0.0241217" quat="0.454521 0.437966 0.529183 0.567065" mass="2.54514" diaginertia="0.0169616 0.014935 0.00789867"/>
+          <joint name="Right_Hip_Pitch" axis="0 -1 0" range="-1 0.5" actuatorfrcrange="-42 42"/>
+          <geom pos="0.016445 0.046548 0.018999" class="visual" mesh="Right_Hip_Pitch_Motor"/>
+          <geom pos="0.016445 0.046548 0.018999" class="visual" mesh="Right_Upper_Leg"/>
+          <geom pos="0.016445 0.046548 0.018999" class="visual" mesh="Right_Knee_Motor"/>
+          <geom pos="0.016445 0.046548 0.018999" class="visual" mesh="RightBottomLegCover"/>
+          <geom pos="0.016445 0.046548 0.018999" class="visual" mesh="RightLegBottomPlug"/>
+          <geom pos="0.016445 0.046548 0.018999" class="visual" mesh="RightUpperLegCover"/>
+          <geom pos="0.016445 0.046548 0.018999" class="visual" mesh="RightLegUpperPlug"/>
+          <body name="Right_Lower_Leg" pos="-0.079193 0 -0.077823">
+            <inertial pos="0.0439964 0.0310957 -0.0887868" quat="0.215223 0.66964 0.634892 0.319646" mass="0.785759" diaginertia="0.00376583 0.00297417 0.00118644"/>
+            <joint name="Right_Knee" axis="0 -1 0" range="-1.2 0.95" actuatorfrcrange="-42 42"/>
+            <geom pos="0.095638 0.046548 0.096822" class="visual" mesh="Right_Lower_Leg"/>
+            <geom pos="0.095638 0.046548 0.096822" class="visual" mesh="Right_Ankle_Motor"/>
+            <geom pos="0.095638 0.046548 0.096822" class="visual" mesh="RightAnkleCover"/>
+            <body name="Right_Foot" pos="0.045364 0.00534 -0.12999">
+              <inertial pos="0.0145127 -0.000397488 -0.0274648" quat="0.317451 0.603212 0.496644 0.537313" mass="0.292365" diaginertia="0.00234065 0.00201227 0.000701132"/>
+              <joint name="Right_Ankle" axis="0 -1 0" range="-1.3 0.85" actuatorfrcrange="-11.9 11.9"/>
+              <geom pos="0.050274 0.041208 0.226812" class="visual" mesh="Right_Foot"/>
+              <geom pos="0.050274 0.041208 0.226812" class="visual" mesh="RightFootPad"/>
+              <geom pos="0.050274 0.041208 0.226812" class="visual" mesh="RightFootCover"/>
+              <geom pos="0.050274 0.041208 0.226812" type="mesh" class="collision" name="right_foot_collision" mesh="RightFootPad"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+    <body name="Left_Hip_Roll_Motor" pos="-0.025798 0.137202 0.043944">
+      <inertial pos="-0.00306484 0.00779333 -0.0589804" quat="0.999289 0.0216466 0.00612604 0.0302708" mass="1.07135" diaginertia="0.002347 0.00214453 0.000904467"/>
+      <joint name="Left_Hip_Yaw" axis="0 0 1" range="-0.5 0.35" actuatorfrcrange="-42 42"/>
+      <geom pos="0.025798 -0.137202 -0.043944" class="visual" mesh="Left_Hip_Roll_Motor"/>
+      <body name="Left_Hip_Connector" pos="0.018 0.0125 -0.064284">
+        <inertial pos="0.00209646 0.0346624 0.00127164" quat="0.696723 0.701917 0.110696 0.0981694" mass="0.155347" diaginertia="0.000184778 0.000167005 7.02171e-05"/>
+        <joint name="Left_Hip_Roll" axis="1 0 0" range="-0.3 0.3" actuatorfrcrange="-42 42"/>
+        <geom pos="0.007798 -0.149702 0.02034" class="visual" mesh="Left_Hip_Connector"/>
+        <body name="Left_Hip_Pitch_Motor" pos="-0.008647 0.07125 0.001341">
+          <inertial pos="-0.0174647 -0.0251193 -0.00876211" quat="0.00455484 0.5422 0.433489 0.719782" mass="2.54514" diaginertia="0.0154414 0.0138946 0.00916379"/>
+          <joint name="Left_Hip_Pitch" axis="0 -1 0" range="-0.5 1" actuatorfrcrange="-42 42"/>
+          <geom pos="0.016445 -0.220952 0.018999" class="visual" mesh="Left_Hip_Pitch_Motor"/>
+          <geom pos="0.016445 -0.220952 0.018999" class="visual" mesh="Left_Upper_Leg"/>
+          <geom pos="0.016445 -0.220952 0.018999" class="visual" mesh="Left_Knee_Motor"/>
+          <geom pos="0.016445 -0.220952 0.018999" class="visual" mesh="LeftBottomLegCover"/>
+          <geom pos="0.016445 -0.220952 0.018999" class="visual" mesh="LeftLegBottomPlug"/>
+          <geom pos="0.016445 -0.220952 0.018999" class="visual" mesh="LeftUpperLegCover"/>
+          <geom pos="0.016445 -0.220952 0.018999" class="visual" mesh="LeftLegUpperPlug"/>
+          <body name="Left_Lower_Leg" pos="-0.079193 -0.0003 -0.077823">
+            <inertial pos="0.0395886 0.00207009 -0.0835681" quat="0.417019 -0.21659 -0.277101 0.838092" mass="0.775759" diaginertia="0.00317379 0.00265199 0.001083"/>
+            <joint name="Left_Knee" axis="0 -1 0" range="-0.95 1.2" actuatorfrcrange="-42 42"/>
+            <geom pos="0.095638 -0.220652 0.096822" class="visual" mesh="Left_Lower_Leg"/>
+            <geom pos="0.095638 -0.220652 0.096822" class="visual" mesh="Left_Ankle_Motor"/>
+            <geom pos="0.095638 -0.220652 0.096822" class="visual" mesh="LeftAnkleCover"/>
+            <body name="Left_Foot" pos="0.045372 -0.00534 -0.130013">
+              <inertial pos="0.0121904 -0.00380556 -0.0293989" quat="0.417786 0.661957 0.417729 0.461271" mass="0.282365" diaginertia="0.00227004 0.00207882 0.000724381"/>
+              <joint name="Left_Ankle" axis="0 -1 0" range="-0.85 1.3" actuatorfrcrange="-11.9 11.9"/>
+              <geom pos="0.050266 -0.215312 0.226835" class="visual" mesh="Left_Foot"/>
+              <geom pos="0.050266 -0.215312 0.226835" class="visual" mesh="LeftFootPad"/>
+              <geom pos="0.050266 -0.215312 0.226835" class="visual" mesh="LeftFootCover"/>
+              <geom pos="0.050266 -0.215312 0.226835" type="mesh" class="collision" name="left_foot_collision" mesh="LeftFootPad"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </body>
+  </worldbody>
+
+  <visual>
+      <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+      <rgba haze="0.15 0.25 0.35 1"/>
+      <global azimuth="120" elevation="-20"/>
+  </visual>
+
+  <asset>
+      <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+      <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
+                markrgb="0.8 0.8 0.8" width="300" height="300"/>
+      <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+
+  <worldbody>
+      <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+      <geom name="floor" pos="0 0 -0.30846" size="0 0 0.01" type="plane" material="groundplane" conaffinity="1"/>
+  </worldbody>
+</mujoco>

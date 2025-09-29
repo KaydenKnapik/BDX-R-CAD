@@ -1,9 +1,6 @@
 <?xml version="1.0" ?>
-<robot name="BDX-R" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="BDX-R">
 
-<xacro:include filename="$(find BDX-R_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find BDX-R_description)/urdf/BDX-R.trans" />
-<xacro:include filename="$(find BDX-R_description)/urdf/BDX-R.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="-0.0019507324683911698 0.08758623120681568 0.01224995497099387" rpy="0 0 0"/>
@@ -13,14 +10,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +31,14 @@
   <visual>
     <origin xyz="-0.019472 -0.018451 -0.046444" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.019472 -0.018451 -0.046444" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +52,14 @@
   <visual>
     <origin xyz="-0.019472 -0.155954 -0.046444" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.019472 -0.155954 -0.046444" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +73,14 @@
   <visual>
     <origin xyz="-0.002222 -0.024202 0.1018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/BottomCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/BottomCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.002222 -0.024202 0.1018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/BottomCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/BottomCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +94,14 @@
   <visual>
     <origin xyz="0.096859 -0.137077 -0.060614" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/BackFrame.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/BackFrame.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.096859 -0.137077 -0.060614" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/BackFrame.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/BackFrame.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +115,14 @@
   <visual>
     <origin xyz="0.163693 -0.137145 -0.030637" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/BackCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/BackCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.163693 -0.137145 -0.030637" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/BackCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/BackCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +136,14 @@
   <visual>
     <origin xyz="-0.071231 0.015041 -0.058018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/FrontCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/FrontCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.071231 0.015041 -0.058018" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/FrontCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/FrontCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +157,14 @@
   <visual>
     <origin xyz="0.068283 -0.178249 -0.108311" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/TopLeftCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/TopLeftCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.068283 -0.178249 -0.108311" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/TopLeftCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/TopLeftCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +178,14 @@
   <visual>
     <origin xyz="0.068283 0.003845 -0.108311" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/TopRightCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/TopRightCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.068283 0.003845 -0.108311" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/TopRightCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/TopRightCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +199,14 @@
   <visual>
     <origin xyz="0.047178 -0.066302 -0.110944" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/IMU_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/IMU_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.047178 -0.066302 -0.110944" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/IMU_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/IMU_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +220,14 @@
   <visual>
     <origin xyz="-0.076306 -0.077202 -0.016701" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Jetson_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Jetson_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.076306 -0.077202 -0.016701" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Jetson_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Jetson_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -244,14 +241,14 @@
   <visual>
     <origin xyz="-0.076005 -0.108952 -0.134165" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.076005 -0.108952 -0.134165" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -265,14 +262,14 @@
   <visual>
     <origin xyz="-0.0 0.002881 -0.093743" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 0.002881 -0.093743" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -286,14 +283,14 @@
   <visual>
     <origin xyz="0.182798 -0.137145 -0.030631" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Antenna.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Antenna.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.182798 -0.137145 -0.030631" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Antenna.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Antenna.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -307,14 +304,14 @@
   <visual>
     <origin xyz="0.190798 -0.137145 -0.030631" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/AntennaBox.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/AntennaBox.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.190798 -0.137145 -0.030631" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/AntennaBox.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/AntennaBox.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -328,14 +325,14 @@
   <visual>
     <origin xyz="0.025798 -0.037202 -0.043944" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.025798 -0.037202 -0.043944" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -349,14 +346,14 @@
   <visual>
     <origin xyz="0.025798 -0.137202 -0.043944" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.025798 -0.137202 -0.043944" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -370,14 +367,14 @@
   <visual>
     <origin xyz="0.007798 -0.024702 0.02034" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.007798 -0.024702 0.02034" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -391,14 +388,14 @@
   <visual>
     <origin xyz="0.007798 -0.149702 0.02034" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.007798 -0.149702 0.02034" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -412,14 +409,14 @@
   <visual>
     <origin xyz="-0.002241 0.049048 -0.026298" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.002241 0.049048 -0.026298" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -433,14 +430,14 @@
   <visual>
     <origin xyz="0.016445 0.046548 0.018999" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.016445 0.046548 0.018999" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -454,14 +451,14 @@
   <visual>
     <origin xyz="0.050206 0.049048 0.078467" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.050206 0.049048 0.078467" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -475,14 +472,14 @@
   <visual>
     <origin xyz="0.095638 0.046548 0.096822" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.095638 0.046548 0.096822" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -496,14 +493,14 @@
   <visual>
     <origin xyz="0.074132 0.037208 0.199189" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.074132 0.037208 0.199189" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -517,14 +514,14 @@
   <visual>
     <origin xyz="0.023078 0.00117 0.194296" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightAnkleCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightAnkleCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.023078 0.00117 0.194296" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightAnkleCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightAnkleCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -538,14 +535,14 @@
   <visual>
     <origin xyz="0.050274 0.041208 0.226812" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.050274 0.041208 0.226812" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -559,14 +556,14 @@
   <visual>
     <origin xyz="0.023451 0.023182 0.285901" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightFootPad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightFootPad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.023451 0.023182 0.285901" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightFootPad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightFootPad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -580,14 +577,14 @@
   <visual>
     <origin xyz="0.091923 0.051708 0.269457" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightFootCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightFootCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.091923 0.051708 0.269457" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightFootCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightFootCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -601,14 +598,14 @@
   <visual>
     <origin xyz="0.141339 0.095548 0.085851" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightBottomLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightBottomLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.141339 0.095548 0.085851" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightBottomLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightBottomLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -622,14 +619,14 @@
   <visual>
     <origin xyz="0.006272 0.095548 -0.026887" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightUpperLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightUpperLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.006272 0.095548 -0.026887" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightUpperLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightUpperLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -643,14 +640,14 @@
   <visual>
     <origin xyz="0.013241 0.115798 0.02084" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.013241 0.115798 0.02084" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -664,14 +661,14 @@
   <visual>
     <origin xyz="0.075329 0.115798 0.09518" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.075329 0.115798 0.09518" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/RightLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/RightLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -685,14 +682,14 @@
   <visual>
     <origin xyz="0.016445 -0.220952 0.018999" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.016445 -0.220952 0.018999" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -706,14 +703,14 @@
   <visual>
     <origin xyz="0.035261 -0.223452 -0.026244" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.035261 -0.223452 -0.026244" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -727,14 +724,14 @@
   <visual>
     <origin xyz="0.076492 -0.262652 0.051718" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.076492 -0.262652 0.051718" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -748,14 +745,14 @@
   <visual>
     <origin xyz="0.095638 -0.220652 0.096822" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.095638 -0.220652 0.096822" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -769,14 +766,14 @@
   <visual>
     <origin xyz="0.050786 -0.211312 0.190338" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.050786 -0.211312 0.190338" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -790,14 +787,14 @@
   <visual>
     <origin xyz="0.050266 -0.215312 0.226835" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.050266 -0.215312 0.226835" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -811,14 +808,14 @@
   <visual>
     <origin xyz="0.023442 -0.197287 0.285924" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftFootPad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftFootPad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.023442 -0.197287 0.285924" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftFootPad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftFootPad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -832,14 +829,14 @@
   <visual>
     <origin xyz="0.091914 -0.225812 0.269479" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftFootCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftFootCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.091914 -0.225812 0.269479" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftFootCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftFootCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -853,14 +850,14 @@
   <visual>
     <origin xyz="0.077524 -0.175275 0.259374" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftAnkleCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftAnkleCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.077524 -0.175275 0.259374" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftAnkleCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftAnkleCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -874,14 +871,14 @@
   <visual>
     <origin xyz="0.141339 -0.269952 0.085851" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftBottomLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftBottomLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.141339 -0.269952 0.085851" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftBottomLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftBottomLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -895,14 +892,14 @@
   <visual>
     <origin xyz="0.006272 -0.269952 -0.026887" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftUpperLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftUpperLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.006272 -0.269952 -0.026887" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftUpperLegCover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftUpperLegCover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -916,14 +913,14 @@
   <visual>
     <origin xyz="0.075329 -0.290202 0.09518" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.075329 -0.290202 0.09518" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftLegBottomPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -937,14 +934,14 @@
   <visual>
     <origin xyz="0.019724 -0.290202 0.006761" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.019724 -0.290202 0.006761" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://BDX-R_description/meshes/LeftLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://BDX-R-Description/meshes/LeftLegUpperPlug.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
