@@ -56,7 +56,7 @@
     <geom type="mesh" mesh="Right_Hip_Yaw_Motor"/>
     <geom type="mesh" mesh="Left_Hip_Yaw_Motor"/>
     <geom type="mesh" mesh="BottomCover"/>
-    <geom type="mesh" mesh="base_link" group="3"/>
+    <geom type="mesh" mesh="base_link" group="3" name="base_collision" />
     <geom type="mesh" mesh="BackFrame"/>
     <geom type="mesh" mesh="BackCover"/>
     <geom type="mesh" mesh="Antenna"/>
@@ -98,7 +98,7 @@
               <geom pos="0.050274 0.041208 0.226812" quat="1 0 0 0" type="mesh" mesh="Right_Foot"/>
               <geom pos="0.050274 0.041208 0.226812" quat="1 0 0 0" type="mesh" mesh="RightFootPad"/>
               <geom pos="0.050274 0.041208 0.226812" quat="1 0 0 0" type="mesh" mesh="RightFootCover"/>
-              <geom pos="0.050274 0.041208 0.226812" quat="1 0 0 0" type="mesh" group="3" mesh="RightFootPad"/>
+              <geom pos="0.050274 0.041208 0.226812" quat="1 0 0 0" type="mesh" group="3" name="right_foot_collision" mesh="RightFootPad"/>
             </body>
           </body>
         </body>
@@ -134,7 +134,7 @@
               <geom pos="0.050266 -0.215312 0.226835" quat="1 0 0 0" type="mesh" mesh="Left_Foot"/>
               <geom pos="0.050266 -0.215312 0.226835" quat="1 0 0 0" type="mesh" mesh="LeftFootPad"/>
               <geom pos="0.050266 -0.215312 0.226835" quat="1 0 0 0" type="mesh" mesh="LeftFootCover"/>
-              <geom pos="0.050266 -0.215312 0.226835" quat="1 0 0 0" type="mesh" group = "3" mesh="LeftFootPad"/>
+              <geom pos="0.050266 -0.215312 0.226835" quat="1 0 0 0" type="mesh" group = "3" name="left_foot_collision" mesh="LeftFootPad"/>
             </body>
           </body>
         </body>
