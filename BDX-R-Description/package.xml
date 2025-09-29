@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>BDX-R_description</name>
+  <name>BDX-R-Description</name>
   <version>0.0.0</version>
-<description>The BDX-R_description package</description>
+<description>The BDX-R-Description package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
