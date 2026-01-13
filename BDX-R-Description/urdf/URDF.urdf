@@ -1486,7 +1486,7 @@
   </collision>
 </link>
 
-<link name="Right_Lower_leg-Cover">
+<link name="Right_Lower_Leg_Cover">
   <inertial>
     <origin xyz="0.06369106428208968 -0.006050249496385718 -0.01748499012355735" rpy="0 0 0"/>
     <mass value="0.36564522610609057"/>
@@ -1495,14 +1495,14 @@
   <visual>
     <origin xyz="0.218742 0.18275 0.107778" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_leg-Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="0.218742 0.18275 0.107778" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_leg-Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -2079,7 +2079,7 @@
 <joint name="Rigid 73" type="fixed">
   <origin xyz="-0.10624 -0.0465 -0.111941" rpy="0 0 0"/>
   <parent link="Right_Upper_Leg"/>
-  <child link="Right_Lower_leg-Cover"/>
+  <child link="Right_Lower_Leg_Cover"/>
 </joint>
 
 <joint name="Rigid 74" type="fixed">
