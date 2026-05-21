@@ -1,5 +1,5 @@
 <mujoco model="bdx-r">
-  <compiler angle="radian" meshdir="../meshes" autolimits="true" balanceinertia="true" />
+  <compiler angle="radian" meshdir="meshes" autolimits="true" balanceinertia="true" />
   <default>
     <default class="bdx-r">
       <site group="5" rgba="1 0 0 1" size="0.01" />
@@ -118,11 +118,11 @@
             <inertial pos="-0.02116 -0.0187285 -0.0452265" mass="0.906987" fullinertia="0.001212 0.000876 0.000914 -6e-06 1e-06 1e-06" />
             <geom class="visual" mesh="Left_Hip_Roll_Motor" material="black" pos="-0.028148 -0.081301 -0.089824" />
             <body name="Left_Hip_Roll_Connector" pos="0.0025 -0.018751 -0.04527">
-              <joint name="Left_Hip_Roll" axis="1.0 0.0 -0.0" range="-0.3490658503988659 0.2617993877991494" />
+              <joint name="Left_Hip_Roll" axis="-1.0 0.0 0.0" range="-0.2617993877991494 0.3490658503988659" />
               <inertial pos="0.0023355 0.0293204 9.42159e-05" mass="0.0981459" fullinertia="0.000108 2.4e-05 0.0001 1.2e-05 0 -0" />
               <geom class="visual" mesh="Left_Hip_Roll_Connector" material="black" pos="-0.030648 -0.06255 -0.044554" />
               <body name="Left_Hip_Pitch_Motor" pos="-0.008646 0.07125 0.001341">
-                <joint name="Left_Hip_Pitch" axis="-0.0 1.0 -0.0" range="-0.6981317007977318 1.0471975511965976" />
+                <joint name="Left_Hip_Pitch" axis="0.0 -1.0 0.0" range="-1.0471975511965976 0.6981317007977318" />
                 <inertial pos="5.59296e-05 0.0237521 -1.95587e-05" mass="0.910452" fullinertia="0.000918 0.001215 0.00088 -1e-06 -1e-06 -6e-06" />
                 <geom class="visual" mesh="Left_Hip_Pitch_Motor" material="black" pos="-0.022002 -0.1338 -0.045895" />
                 <body name="Left_Upper_Leg" pos="-0.018752 0.0025 0.04527">
@@ -132,7 +132,7 @@
                     <inertial pos="0.045479 0.0212521 0.0183467" mass="0.910452" fullinertia="0.00088 0.001215 0.000918 6e-06 1e-06 -1e-06" />
                     <geom class="visual" mesh="Left_Knee_Motor" material="black" pos="0.102763 -0.1363 0.050104" />
                     <body name="Left_Lower_Leg" pos="0.045459 -0.0025 0.018291">
-                      <joint name="Left_Knee" axis="0.0 -1.0 0.0" range="-1.3089969389957472 0.9599310885968813" />
+                      <joint name="Left_Knee" axis="0.0 1.0 0.0" range="-0.9599310885968813 1.3089969389957472" />
                       <inertial pos="0.0122832 -0.0211551 -0.0653918" mass="0.386853" fullinertia="0.00123 0.001535 0.000412 2e-05 0.000321 -6.6e-05" />
                       <geom class="visual" mesh="Left_Lower_Leg" material="black" pos="0.057304 -0.1338 0.031813" />
                       <body name="Left_Ankle_Cover" pos="0.072419 -0.045377 -0.097579">
@@ -203,7 +203,7 @@
               <inertial pos="0.0023355 -0.0293203 9.42157e-05" mass="0.0981459" fullinertia="0.000108 2.4e-05 0.0001 -1.2e-05 0 0" />
               <geom class="visual" mesh="Right_Hip_Roll_Connector" material="black" pos="-0.030648 0.06245 -0.042814" />
               <body name="Right_Hip_Pitch_Motor" pos="-0.008646 -0.07125 0.001341">
-                <joint name="Right_Hip_Pitch" axis="-0.0 -1.0 -0.0" range="-1.0471975511965976 0.6981317007977318" />
+                <joint name="Right_Hip_Pitch" axis="0.0 1.0 0.0" range="-0.6981317007977318 1.0471975511965976" />
                 <inertial pos="5.59947e-05 -0.0237519 -1.92588e-05" mass="0.910444" fullinertia="0.000918 0.001215 0.00088 1e-06 -1e-06 6e-06" />
                 <geom class="visual" mesh="Right_Hip_Pitch_Motor" material="black" pos="-0.022002 0.1337 -0.044155" />
                 <body name="Right_Upper_Leg" pos="-0.018752 -0.0025 0.04527">
@@ -220,7 +220,7 @@
                         <inertial pos="0.000948222 0.0168978 -0.0378287" mass="0.43363" fullinertia="0.000297 0.000423 0.000296 1e-06 6e-06 2e-06" />
                         <geom class="visual" mesh="Right_Ankle_Motor" material="black" pos="0.012587 0.12436 0.127134" />
                         <body name="Right_Foot" pos="0.000432 -0.004 -0.036498">
-                          <joint name="Right_Ankle" axis="0.0 -1.0 0.0" range="-0.785 1.2217304763960306" />
+                          <joint name="Right_Ankle" axis="0.0 1.0 0.0" range="-1.2217304763960306 0.785" />
                           <inertial pos="0.02614 0.00466555 -0.039192" mass="0.253739" fullinertia="0.000195 0.000667 0.0006 -1.9e-05 2.5e-05 4.5e-05" />
                           <geom class="visual" mesh="Right_Foot" material="black" pos="0.012155 0.12836 0.163632" />
                           <body name="Right_Foot_Pad" pos="0.10668 0.018025 -0.059278">
