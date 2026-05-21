@@ -25,14 +25,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -46,14 +46,14 @@
   <visual>
     <origin xyz="0.032622 -0.068801 -0.109598" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.032622 -0.068801 -0.109598" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -67,14 +67,14 @@
   <visual>
     <origin xyz="0.032622 0.068701 -0.109598" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.032622 0.068701 -0.109598" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -88,14 +88,14 @@
   <visual>
     <origin xyz="-0.132886 0.0164 -0.129795" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.132886 0.0164 -0.129795" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -109,14 +109,14 @@
   <visual>
     <origin xyz="-0.101932 0.0204 -0.149137" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Neck.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Neck.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.101932 0.0204 -0.149137" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Neck.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Neck.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -130,14 +130,14 @@
   <visual>
     <origin xyz="-0.040668 -0.06305 0.038646" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Bottom_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Bottom_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.040668 -0.06305 0.038646" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Bottom_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Bottom_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -151,14 +151,14 @@
   <visual>
     <origin xyz="-0.070648 0.0177 -0.088154" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.070648 0.0177 -0.088154" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -172,14 +172,14 @@
   <visual>
     <origin xyz="-0.070648 -0.0178 -0.088154" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.070648 -0.0178 -0.088154" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -193,14 +193,14 @@
   <visual>
     <origin xyz="0.041248 0.05995 -0.148898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Base_Top_Clamp.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Base_Top_Clamp.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.041248 0.05995 -0.148898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Base_Top_Clamp.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Base_Top_Clamp.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -214,14 +214,14 @@
   <visual>
     <origin xyz="-0.054648 0.02606 -0.249368" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.054648 0.02606 -0.249368" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -235,14 +235,14 @@
   <visual>
     <origin xyz="0.042349 -0.091047 -0.150304" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.042349 -0.091047 -0.150304" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -256,14 +256,14 @@
   <visual>
     <origin xyz="0.032533 -0.084396 -0.175919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Top_Base_Frame.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Top_Base_Frame.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.032533 -0.084396 -0.175919" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Top_Base_Frame.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Top_Base_Frame.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -277,14 +277,14 @@
   <visual>
     <origin xyz="-0.037147 0.02606 -0.260517" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Pitch_Motor_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.037147 0.02606 -0.260517" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Pitch_Motor_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -298,14 +298,14 @@
   <visual>
     <origin xyz="-0.019178 -0.000991 -0.335074" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.019178 -0.000991 -0.335074" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -319,14 +319,14 @@
   <visual>
     <origin xyz="-0.038348 0.00695 -0.335074" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.038348 0.00695 -0.335074" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -340,14 +340,14 @@
   <visual>
     <origin xyz="-0.082345 0.00695 -0.326074" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.082345 0.00695 -0.326074" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -361,14 +361,14 @@
   <visual>
     <origin xyz="-0.082345 -0.01222 -0.318134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Roll_Motor_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Roll_Motor_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.082345 -0.01222 -0.318134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Roll_Motor_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Roll_Motor_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -382,14 +382,14 @@
   <visual>
     <origin xyz="-0.104552 -0.01005 -0.079856" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Front_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Front_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.104552 -0.01005 -0.079856" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Front_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Front_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -403,14 +403,14 @@
   <visual>
     <origin xyz="-0.104552 0.092293 -0.114895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Cable_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.104552 0.092293 -0.114895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Cable_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -424,14 +424,14 @@
   <visual>
     <origin xyz="-0.084445 0.034502 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Base_Plate.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Base_Plate.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.084445 0.034502 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Base_Plate.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Head_Base_Plate.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -445,14 +445,14 @@
   <visual>
     <origin xyz="-0.143043 0.090981 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Eye.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.143043 0.090981 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Eye.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -466,14 +466,14 @@
   <visual>
     <origin xyz="-0.109446 0.102193 -0.05136" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Front_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.109446 0.102193 -0.05136" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Front_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -487,14 +487,14 @@
   <visual>
     <origin xyz="0.038833 0.109154 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Head_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.038833 0.109154 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Head_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -508,14 +508,14 @@
   <visual>
     <origin xyz="-0.164052 0.137138 -0.393057" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Front_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="-0.164052 0.137138 -0.393057" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Front_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -529,14 +529,14 @@
   <visual>
     <origin xyz="-0.143043 -0.075495 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Eye.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.143043 -0.075495 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Eye.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -550,14 +550,14 @@
   <visual>
     <origin xyz="0.042349 0.090947 -0.150304" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.042349 0.090947 -0.150304" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -571,14 +571,14 @@
   <visual>
     <origin xyz="-0.056698 -0.12323 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Head_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.056698 -0.12323 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Head_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -592,14 +592,14 @@
   <visual>
     <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Front_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Front_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -613,14 +613,14 @@
   <visual>
     <origin xyz="0.042025 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Battery_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Battery_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.042025 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Battery_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Battery_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -634,14 +634,14 @@
   <visual>
     <origin xyz="-0.104552 -0.092393 -0.114895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Cable_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.104552 -0.092393 -0.114895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Cable_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -655,14 +655,14 @@
   <visual>
     <origin xyz="-0.049588 0.0277 -0.232726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Battery.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.049588 0.0277 -0.232726" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Battery.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -676,14 +676,14 @@
   <visual>
     <origin xyz="0.060049 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Back_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Back_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.060049 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Back_Support.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Back_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -697,14 +697,14 @@
   <visual>
     <origin xyz="0.054348 0.014507 0.029722" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="0.054348 0.014507 0.029722" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -718,14 +718,14 @@
   <visual>
     <origin xyz="-0.137406 0.13265 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Face.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Face.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.137406 0.13265 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Face.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Face.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -739,14 +739,14 @@
   <visual>
     <origin xyz="-0.012648 -0.05005 -0.107098" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.012648 -0.05005 -0.107098" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -760,14 +760,14 @@
   <visual>
     <origin xyz="-0.028148 -0.081301 -0.089824" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.028148 -0.081301 -0.089824" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -781,14 +781,14 @@
   <visual>
     <origin xyz="-0.030648 -0.06255 -0.044554" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.030648 -0.06255 -0.044554" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -802,14 +802,14 @@
   <visual>
     <origin xyz="-0.022002 -0.1338 -0.045895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.022002 -0.1338 -0.045895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -823,14 +823,14 @@
   <visual>
     <origin xyz="-0.00325 -0.1363 -0.091165" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.00325 -0.1363 -0.091165" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -844,14 +844,14 @@
   <visual>
     <origin xyz="-0.028148 -0.081301 0.000716" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.028148 -0.081301 0.000716" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -865,14 +865,14 @@
   <visual>
     <origin xyz="0.102763 -0.1363 0.050104" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.102763 -0.1363 0.050104" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -886,14 +886,14 @@
   <visual>
     <origin xyz="0.057304 -0.1338 0.031813" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.057304 -0.1338 0.031813" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -907,14 +907,14 @@
   <visual>
     <origin xyz="-0.015115 -0.088423 0.129392" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="-0.015115 -0.088423 0.129392" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -928,14 +928,14 @@
   <visual>
     <origin xyz="0.048173 -0.12446 0.155979" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.048173 -0.12446 0.155979" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -949,14 +949,14 @@
   <visual>
     <origin xyz="0.012155 -0.12846 0.161892" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.012155 -0.12846 0.161892" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -970,14 +970,14 @@
   <visual>
     <origin xyz="-0.210277 -0.102828 0.134168" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.210277 -0.102828 0.134168" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -991,14 +991,14 @@
   <visual>
     <origin xyz="-0.090481 -0.14196 0.210795" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="-0.090481 -0.14196 0.210795" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1012,14 +1012,14 @@
   <visual>
     <origin xyz="-0.062151 -0.1828 -0.016096" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.062151 -0.1828 -0.016096" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1033,14 +1033,14 @@
   <visual>
     <origin xyz="0.10299 -0.1828 0.020775" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="0.10299 -0.1828 0.020775" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1054,14 +1054,14 @@
   <visual>
     <origin xyz="-0.084292 -0.194674 -0.145814" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="green"/>
   </visual>
   <collision>
     <origin xyz="-0.084292 -0.194674 -0.145814" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1075,14 +1075,14 @@
   <visual>
     <origin xyz="-0.286789 -0.05445 -0.237645" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Camera_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Camera_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.286789 -0.05445 -0.237645" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Camera_Mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Camera_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1096,14 +1096,14 @@
   <visual>
     <origin xyz="0.144254 0.048122 -0.09396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Antenna_Box.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Antenna_Box.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="0.144254 0.048122 -0.09396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Antenna_Box.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Antenna_Box.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1117,14 +1117,14 @@
   <visual>
     <origin xyz="-0.012648 0.04995 -0.107098" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.012648 0.04995 -0.107098" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1138,14 +1138,14 @@
   <visual>
     <origin xyz="-0.028148 0.043699 -0.088084" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.028148 0.043699 -0.088084" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1159,14 +1159,14 @@
   <visual>
     <origin xyz="-0.030648 0.06245 -0.042814" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.030648 0.06245 -0.042814" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1180,14 +1180,14 @@
   <visual>
     <origin xyz="-0.028148 0.043699 0.002456" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.028148 0.043699 0.002456" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1201,14 +1201,14 @@
   <visual>
     <origin xyz="-0.022002 0.1337 -0.044155" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.022002 0.1337 -0.044155" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1222,14 +1222,14 @@
   <visual>
     <origin xyz="-0.00325 0.1362 -0.089425" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.00325 0.1362 -0.089425" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1243,14 +1243,14 @@
   <visual>
     <origin xyz="0.075594 0.1362 -0.011905" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.075594 0.1362 -0.011905" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1264,14 +1264,14 @@
   <visual>
     <origin xyz="0.057304 0.1337 0.033553" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.057304 0.1337 0.033553" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1285,14 +1285,14 @@
   <visual>
     <origin xyz="0.012587 0.12436 0.127134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.012587 0.12436 0.127134" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1306,14 +1306,14 @@
   <visual>
     <origin xyz="0.012155 0.12836 0.163632" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.012155 0.12836 0.163632" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1327,14 +1327,14 @@
   <visual>
     <origin xyz="-0.094525 0.110335 0.22291" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.094525 0.110335 0.22291" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1348,14 +1348,14 @@
   <visual>
     <origin xyz="0.053907 0.14186 0.206176" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="0.053907 0.14186 0.206176" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1369,14 +1369,14 @@
   <visual>
     <origin xyz="-0.062151 0.1827 -0.014356" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.062151 0.1827 -0.014356" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1390,14 +1390,14 @@
   <visual>
     <origin xyz="0.10299 0.1827 0.022515" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="0.10299 0.1827 0.022515" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1411,14 +1411,14 @@
   <visual>
     <origin xyz="-0.084292 0.194474 -0.142334" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="-0.084292 0.194474 -0.142334" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1432,14 +1432,14 @@
   <visual>
     <origin xyz="0.039426 0.088323 0.196131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
     <origin xyz="0.039426 0.088323 0.196131" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1453,14 +1453,14 @@
   <visual>
     <origin xyz="-0.067472 -0.098439 -0.171365" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Top_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.067472 -0.098439 -0.171365" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Top_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1474,14 +1474,14 @@
   <visual>
     <origin xyz="-0.067472 0.098339 -0.171365" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Top_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.067472 0.098339 -0.171365" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Top_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1495,14 +1495,14 @@
   <visual>
     <origin xyz="0.032622 -0.031299 -0.158898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/imu_mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/imu_mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.032622 -0.031299 -0.158898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/imu_mount.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/imu_mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1516,14 +1516,14 @@
   <visual>
     <origin xyz="0.023972 -0.02095 -0.173898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/imu.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/imu.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.023972 -0.02095 -0.173898" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/imu.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/imu.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1537,14 +1537,14 @@
   <visual>
     <origin xyz="-0.114552 0.00995 -0.079856" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Orin_Nano_Case.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Orin_Nano_Case.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="-0.114552 0.00995 -0.079856" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Orin_Nano_Case.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Orin_Nano_Case.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1558,14 +1558,14 @@
   <visual>
     <origin xyz="0.058148 0.078092 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.058148 0.078092 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1579,14 +1579,14 @@
   <visual>
     <origin xyz="0.079691 0.073953 -0.34196" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.079691 0.073953 -0.34196" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1600,14 +1600,14 @@
   <visual>
     <origin xyz="0.079022 0.073953 -0.322376" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.079022 0.073953 -0.322376" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1621,14 +1621,14 @@
   <visual>
     <origin xyz="0.058148 -0.032607 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.058148 -0.032607 -0.296639" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1642,14 +1642,14 @@
   <visual>
     <origin xyz="0.070598 -0.056868 -0.32895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.070598 -0.056868 -0.32895" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1663,14 +1663,14 @@
   <visual>
     <origin xyz="0.083143 -0.056868 -0.333652" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.083143 -0.056868 -0.333652" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1684,14 +1684,14 @@
   <visual>
     <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Head_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Head_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
     <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Head_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Head_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -1706,14 +1706,14 @@
   <visual>
     <origin xyz="0.126801 -0.030396 -0.305774" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
     <origin xyz="0.126801 -0.030396 -0.305774" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
