@@ -18,9 +18,9 @@
 <xacro:include filename="$(find URDF_description)/urdf/URDF.gazebo" />
 <link name="base_link">
   <inertial>
-    <origin xyz="-0.08719704477096235 -3.999399846037971e-05 -0.03423994226335707" rpy="0 0 0"/>
-    <mass value="1"/>
-    <inertia ixx="0.042338" iyy="0.058645" izz="0.033168" ixy="7e-05" iyz="3.4e-05" ixz="0.0057"/>
+    <origin xyz="0.028525738093904705 8.410394601281795e-06 0.05099183615550218" rpy="0 0 0"/>
+    <mass value="1.1588690647920126"/>
+    <inertia ixx="0.005714" iyy="0.007914" izz="0.004476" ixy="1e-05" iyz="5e-06" ixz="0.000772"/>
   </inertial>
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
@@ -39,19 +39,19 @@
 
 <link name="Left_Hip_Yaw_Motor">
   <inertial>
-    <origin xyz="0.04521391530670407 -0.018731669621569767 0.02125228248962339" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="0.045213746485260733 -0.018731669621570197 0.021252327393896292" rpy="0 0 0"/>
+    <mass value="0.9104438184229293"/>
     <inertia ixx="0.000918" iyy="0.00088" izz="0.001215" ixy="-1e-06" iyz="6e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.148374 -0.068751 -0.024336" rpy="0 0 0"/>
+    <origin xyz="0.032622 -0.068801 -0.109598" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.148374 -0.068751 -0.024336" rpy="0 0 0"/>
+    <origin xyz="0.032622 -0.068801 -0.109598" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -60,19 +60,19 @@
 
 <link name="Right_Hip_Yaw_Motor">
   <inertial>
-    <origin xyz="0.04532687839493971 0.018731674514507995 0.021252282487618467" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="0.04532670957349641 0.018731674514507593 0.02125232739189134" rpy="0 0 0"/>
+    <mass value="0.9104438183269751"/>
     <inertia ixx="0.000918" iyy="0.00088" izz="0.001215" ixy="-1e-06" iyz="-6e-06" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.148374 0.068751 -0.024336" rpy="0 0 0"/>
+    <origin xyz="0.032622 0.068701 -0.109598" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.148374 0.068751 -0.024336" rpy="0 0 0"/>
+    <origin xyz="0.032622 0.068701 -0.109598" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -81,19 +81,19 @@
 
 <link name="Neck_Motor">
   <inertial>
-    <origin xyz="-0.030899464082702152 0.016897847988094114 0.020715370781576578" rpy="0 0 0"/>
-    <mass value="0.405"/>
-    <inertia ixx="0.000222" iyy="0.000313" izz="0.000217" ixy="-1e-06" iyz="-0.0" ixz="2e-06"/>
+    <origin xyz="-0.030899632904145602 0.016897847988093587 0.020715415685849364" rpy="0 0 0"/>
+    <mass value="0.42940231867124456"/>
+    <inertia ixx="0.000296" iyy="0.000419" izz="0.00029" ixy="-2e-06" iyz="-1e-06" ixz="3e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.017134 0.01645 -0.044533" rpy="0 0 0"/>
+    <origin xyz="-0.132886 0.0164 -0.129795" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="-0.017134 0.01645 -0.044533" rpy="0 0 0"/>
+    <origin xyz="-0.132886 0.0164 -0.129795" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Neck_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -102,19 +102,19 @@
 
 <link name="Neck">
   <inertial>
-    <origin xyz="-0.025459416141447498 0.012476197031113925 0.06068163152972565" rpy="0 0 0"/>
+    <origin xyz="-0.023456686333620566 0.004385693870123709 0.056573103031168165" rpy="0 0 0"/>
     <mass value="0.2"/>
-    <inertia ixx="0.001657" iyy="0.001959" izz="0.001097" ixy="0.000115" iyz="-0.000281" ixz="0.000638"/>
+    <inertia ixx="0.00022" iyy="0.00028" izz="0.000123" ixy="1.3e-05" iyz="-3.4e-05" ixz="9.1e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.01382 0.02045 -0.063875" rpy="0 0 0"/>
+    <origin xyz="-0.101932 0.0204 -0.149137" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Neck.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.01382 0.02045 -0.063875" rpy="0 0 0"/>
+    <origin xyz="-0.101932 0.0204 -0.149137" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Neck.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -123,19 +123,19 @@
 
 <link name="Bottom_Cover">
   <inertial>
-    <origin xyz="-0.002156952438463311 -0.06300000007591698 0.0009136737179247095" rpy="0 0 0"/>
+    <origin xyz="-0.0021571212599065803 -0.06300000007591743 0.0009137186221978982" rpy="0 0 0"/>
     <mass value="0.1"/>
-    <inertia ixx="0.000618" iyy="6.5e-05" izz="0.000671" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+    <inertia ixx="8.3e-05" iyy="9e-06" izz="9.1e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.075084 -0.063 0.123908" rpy="0 0 0"/>
+    <origin xyz="-0.040668 -0.06305 0.038646" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Bottom_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.075084 -0.063 0.123908" rpy="0 0 0"/>
+    <origin xyz="-0.040668 -0.06305 0.038646" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Bottom_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -144,19 +144,19 @@
 
 <link name="Right_Hip_Yaw_Support">
   <inertial>
-    <origin xyz="-0.002427777890313232 -0.029803010884219227 -0.0057760929095164865" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000485" iyy="0.000326" izz="0.00034" ixy="-1e-05" iyz="7e-06" ixz="3.5e-05"/>
+    <origin xyz="-0.002336549139038302 -0.029701096210659646 -0.005795229206082872" rpy="0 0 0"/>
+    <mass value="0.11096680121360432"/>
+    <inertia ixx="6.5e-05" iyy="4.4e-05" izz="4.5e-05" ixy="-1e-06" iyz="1e-06" ixz="5e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.045104 0.01775 -0.002892" rpy="0 0 0"/>
+    <origin xyz="-0.070648 0.0177 -0.088154" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.045104 0.01775 -0.002892" rpy="0 0 0"/>
+    <origin xyz="-0.070648 0.0177 -0.088154" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -165,19 +165,19 @@
 
 <link name="Left_Hip_Yaw_Support">
   <inertial>
-    <origin xyz="-0.0024644433007056515 0.029603736388163212 -0.005671677346670203" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000479" iyy="0.000323" izz="0.000336" ixy="1e-05" iyz="-8e-06" ixz="3.4e-05"/>
+    <origin xyz="-0.0024065689570930693 0.029787288991346517 -0.005984717071310194" rpy="0 0 0"/>
+    <mass value="0.10788076345385224"/>
+    <inertia ixx="6.3e-05" iyy="4.2e-05" izz="4.4e-05" ixy="1e-06" iyz="-2e-06" ixz="5e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.045104 -0.01775 -0.002892" rpy="0 0 0"/>
+    <origin xyz="-0.070648 -0.0178 -0.088154" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.045104 -0.01775 -0.002892" rpy="0 0 0"/>
+    <origin xyz="-0.070648 -0.0178 -0.088154" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Yaw_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -186,19 +186,19 @@
 
 <link name="Base_Top_Clamp">
   <inertial>
-    <origin xyz="0.01157167662453315 0.05999999991889323 0.004830967427440658" rpy="0 0 0"/>
-    <mass value="0.044"/>
-    <inertia ixx="0.000471" iyy="8.8e-05" izz="0.000553" ixy="0.0" iyz="-0.0" ixz="-1e-06"/>
+    <origin xyz="0.011571507803089898 0.05999999991889285 0.004831012331713513" rpy="0 0 0"/>
+    <mass value="0.04628859676338927"/>
+    <inertia ixx="6.4e-05" iyy="1.2e-05" izz="7.5e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.157 0.06 -0.063636" rpy="0 0 0"/>
+    <origin xyz="0.041248 0.05995 -0.148898" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Base_Top_Clamp.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.157 0.06 -0.063636" rpy="0 0 0"/>
+    <origin xyz="0.041248 0.05995 -0.148898" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Base_Top_Clamp.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -207,19 +207,19 @@
 
 <link name="Head_Pitch_Motor">
   <inertial>
-    <origin xyz="-0.017590787737470047 0.017245843849959197 0.011296815700074514" rpy="0 0 0"/>
-    <mass value="0.242"/>
-    <inertia ixx="6.7e-05" iyy="5.9e-05" izz="6.7e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <origin xyz="-0.01759095655891347 0.017245843849958753 0.01129686060434712" rpy="0 0 0"/>
+    <mass value="0.21407641363122526"/>
+    <inertia ixx="8.9e-05" iyy="7.9e-05" izz="8.9e-05" ixy="0.0" iyz="-1e-06" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.061104 0.02611 -0.164106" rpy="0 0 0"/>
+    <origin xyz="-0.054648 0.02606 -0.249368" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.061104 0.02611 -0.164106" rpy="0 0 0"/>
+    <origin xyz="-0.054648 0.02606 -0.249368" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -228,19 +228,19 @@
 
 <link name="Left_Holder">
   <inertial>
-    <origin xyz="0.06546457370101699 0.020279720818442315 9.292221895877695e-05" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000338" iyy="0.001539" izz="0.001296" ixy="-0.000176" iyz="9e-06" ixz="0.000298"/>
+    <origin xyz="0.0654654048795736 0.020279720818441843 9.296712323167422e-05" rpy="0 0 0"/>
+    <mass value="0.03609216827781493"/>
+    <inertia ixx="3.2e-05" iyy="0.000147" izz="0.000124" ixy="-1.7e-05" iyz="1e-06" ixz="2.9e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.1581 -0.090997 -0.065042" rpy="0 0 0"/>
+    <origin xyz="0.042349 -0.091047 -0.150304" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.1581 -0.090997 -0.065042" rpy="0 0 0"/>
+    <origin xyz="0.042349 -0.091047 -0.150304" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -249,19 +249,19 @@
 
 <link name="Top_Base_Frame">
   <inertial>
-    <origin xyz="0.08765831320754461 -0.08434599939378293 0.008532662178749442" rpy="0 0 0"/>
-    <mass value="0.15"/>
-    <inertia ixx="0.005038" iyy="0.003533" izz="0.008543" ixy="0.0" iyz="0.0" ixz="-3.4e-05"/>
+    <origin xyz="0.0876581443861012 -0.0843459993937834 0.008532707083022228" rpy="0 0 0"/>
+    <mass value="0.1195092727509324"/>
+    <inertia ixx="0.00068" iyy="0.000477" izz="0.001154" ixy="0.0" iyz="0.0" ixz="-5e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.148285 -0.084346 -0.090657" rpy="0 0 0"/>
+    <origin xyz="0.032533 -0.084396 -0.175919" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Top_Base_Frame.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.148285 -0.084346 -0.090657" rpy="0 0 0"/>
+    <origin xyz="0.032533 -0.084396 -0.175919" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Top_Base_Frame.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -270,19 +270,19 @@
 
 <link name="Head_Pitch_Motor_Support">
   <inertial>
-    <origin xyz="-0.008748961512890202 0.014920627572909467 0.04067775286026484" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000418" iyy="0.00034" izz="0.00018" ixy="1.5e-05" iyz="-6.2e-05" ixz="6.4e-05"/>
+    <origin xyz="-0.009648450647457837 0.013235009173050122 0.043023065481501754" rpy="0 0 0"/>
+    <mass value="0.04464301349288608"/>
+    <inertia ixx="5e-05" iyy="4.2e-05" izz="1.9e-05" ixy="2e-06" iyz="-8e-06" ixz="8e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.078605 0.02611 -0.175255" rpy="0 0 0"/>
+    <origin xyz="-0.037147 0.02606 -0.260517" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.078605 0.02611 -0.175255" rpy="0 0 0"/>
+    <origin xyz="-0.037147 0.02606 -0.260517" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Pitch_Motor_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -291,19 +291,19 @@
 
 <link name="Head_Yaw_Motor">
   <inertial>
-    <origin xyz="0.019159681788635863 -0.008113705381133644 -0.017245902968401422" rpy="0 0 0"/>
-    <mass value="0.242"/>
-    <inertia ixx="6.6e-05" iyy="6.7e-05" izz="5.9e-05" ixy="-0.0" iyz="-1e-06" ixz="-0.0"/>
+    <origin xyz="0.01915951296719262 -0.008113705381134033 -0.017245866102758134" rpy="0 0 0"/>
+    <mass value="0.214075321187319"/>
+    <inertia ixx="8.9e-05" iyy="9e-05" izz="7.9e-05" ixy="-0.0" iyz="-1e-06" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.096574 -0.000941 -0.249612" rpy="0 0 0"/>
+    <origin xyz="-0.019178 -0.000991 -0.335074" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.096574 -0.000941 -0.249612" rpy="0 0 0"/>
+    <origin xyz="-0.019178 -0.000991 -0.335074" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Yaw_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -312,19 +312,19 @@
 
 <link name="Head_Roll_Connector">
   <inertial>
-    <origin xyz="0.020342845077876093 -4.1823145056560374e-08 0.0034769931797538622" rpy="0 0 0"/>
-    <mass value="0.05"/>
-    <inertia ixx="2.8e-05" iyy="7.4e-05" izz="7.2e-05" ixy="-0.0" iyz="0.0" ixz="1.4e-05"/>
+    <origin xyz="0.02113076347298415 -4.1823138448998654e-08 0.0029673854012849943" rpy="0 0 0"/>
+    <mass value="0.02623495760996857"/>
+    <inertia ixx="4e-06" iyy="1e-05" izz="1e-05" ixy="-0.0" iyz="0.0" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.077404 0.007 -0.249612" rpy="0 0 0"/>
+    <origin xyz="-0.038348 0.00695 -0.335074" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.077404 0.007 -0.249612" rpy="0 0 0"/>
+    <origin xyz="-0.038348 0.00695 -0.335074" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -333,19 +333,19 @@
 
 <link name="Head_Roll_Motor">
   <inertial>
-    <origin xyz="0.017246288920139068 -0.00017265347517978792 -1.0383929886254029e-05" rpy="0 0 0"/>
-    <mass value="0.242"/>
-    <inertia ixx="5.9e-05" iyy="6.7e-05" izz="6.6e-05" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
+    <origin xyz="0.01724612009869564 -0.0001726534751802884 -1.0347064243076964e-05" rpy="0 0 0"/>
+    <mass value="0.21407532118731826"/>
+    <inertia ixx="7.9e-05" iyy="9e-05" izz="8.9e-05" ixy="1e-06" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.033407 0.007 -0.240612" rpy="0 0 0"/>
+    <origin xyz="-0.082345 0.00695 -0.326074" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.033407 0.007 -0.240612" rpy="0 0 0"/>
+    <origin xyz="-0.082345 0.00695 -0.326074" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -354,19 +354,19 @@
 
 <link name="Head_Roll_Motor_Mount">
   <inertial>
-    <origin xyz="0.015202195484576058 -0.020056972375373537 -0.011798452493393785" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000227" iyy="0.000133" izz="0.000316" ixy="3e-06" iyz="5e-06" ixz="9e-06"/>
+    <origin xyz="0.01423395816434965 -0.020014259380710914 -0.010814584809212102" rpy="0 0 0"/>
+    <mass value="0.06069341482294389"/>
+    <inertia ixx="3.3e-05" iyy="2e-05" izz="4.5e-05" ixy="0.0" iyz="1e-06" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.033407 -0.01217 -0.232672" rpy="0 0 0"/>
+    <origin xyz="-0.082345 -0.01222 -0.318134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Roll_Motor_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.033407 -0.01217 -0.232672" rpy="0 0 0"/>
+    <origin xyz="-0.082345 -0.01222 -0.318134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Roll_Motor_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -375,19 +375,19 @@
 
 <link name="Front_Support">
   <inertial>
-    <origin xyz="0.002675563632862211 -0.009999999985889884 -0.016526977261899587" rpy="0 0 0"/>
-    <mass value="0.15"/>
-    <inertia ixx="0.014288" iyy="0.006674" izz="0.007707" ixy="0.0" iyz="0.0" ixz="7.8e-05"/>
+    <origin xyz="0.002675394811418791 -0.009999999985890417 -0.016526932357626617" rpy="0 0 0"/>
+    <mass value="0.18424409661297098"/>
+    <inertia ixx="0.001929" iyy="0.000901" izz="0.001041" ixy="0.0" iyz="0.0" ixz="1.1e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.0112 -0.01 0.005406" rpy="0 0 0"/>
+    <origin xyz="-0.104552 -0.01005 -0.079856" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Front_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.0112 -0.01 0.005406" rpy="0 0 0"/>
+    <origin xyz="-0.104552 -0.01005 -0.079856" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Front_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -396,19 +396,19 @@
 
 <link name="Right_Cable_Support">
   <inertial>
-    <origin xyz="-0.00464407019141712 0.01208768916895099 -0.002942995141052583" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000111" iyy="0.000115" izz="0.000123" ixy="-1.3e-05" iyz="3e-06" ixz="9e-06"/>
+    <origin xyz="-0.0046442390128605265 0.012087689168950519 -0.0029429502367797344" rpy="0 0 0"/>
+    <mass value="0.055274654923445694"/>
+    <inertia ixx="1.5e-05" iyy="1.6e-05" izz="1.7e-05" ixy="-2e-06" iyz="0.0" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.0112 0.092343 -0.029633" rpy="0 0 0"/>
+    <origin xyz="-0.104552 0.092293 -0.114895" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.0112 0.092343 -0.029633" rpy="0 0 0"/>
+    <origin xyz="-0.104552 0.092293 -0.114895" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -417,19 +417,19 @@
 
 <link name="Head_Base_Plate">
   <inertial>
-    <origin xyz="-0.03140700566383424 0.02675877413488265 -0.0009997785465086784" rpy="0 0 0"/>
-    <mass value="0.24"/>
-    <inertia ixx="0.004481" iyy="0.00289" izz="0.007371" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+    <origin xyz="-0.03140717448527761 0.026758774134882663 -0.0009997416808648074" rpy="0 0 0"/>
+    <mass value="0.24167712099257307"/>
+    <inertia ixx="0.001541" iyy="0.000994" izz="0.002535" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.031307 0.034552 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.084445 0.034502 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Base_Plate.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.031307 0.034552 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.084445 0.034502 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Head_Base_Plate.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -438,19 +438,19 @@
 
 <link name="Right_Eye">
   <inertial>
-    <origin xyz="0.005266521488282844 0.022107090988212133 0.020791194336308383" rpy="0 0 0"/>
-    <mass value="0.02"/>
-    <inertia ixx="4.8e-05" iyy="3e-05" izz="2.6e-05" ixy="-1e-06" iyz="-1e-06" ixz="-3e-06"/>
+    <origin xyz="0.005267352666839337 0.022107090988211994 0.020791231201952254" rpy="0 0 0"/>
+    <mass value="0.011103671152706012"/>
+    <inertia ixx="5e-06" iyy="3e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.027292 0.091031 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.143043 0.090981 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="-0.027292 0.091031 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.143043 0.090981 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -459,19 +459,19 @@
 
 <link name="Front_Cover">
   <inertial>
-    <origin xyz="0.03333855327041867 0.10026781053986698 0.03314346935042122" rpy="0 0 0"/>
-    <mass value="0.2"/>
-    <inertia ixx="0.039575" iyy="0.0241" izz="0.020937" ixy="-0.00014" iyz="-0.000403" ixz="-0.00097"/>
+    <origin xyz="0.03507590960583647 0.10243374960972634 0.028954921964740116" rpy="0 0 0"/>
+    <mass value="0.319189974357708"/>
+    <inertia ixx="0.004028" iyy="0.002471" izz="0.002125" ixy="0.0" iyz="-0.0" ixz="-8e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.006306 0.102243 0.033903" rpy="0 0 0"/>
+    <origin xyz="-0.109446 0.102193 -0.05136" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.006306 0.102243 0.033903" rpy="0 0 0"/>
+    <origin xyz="-0.109446 0.102193 -0.05136" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -480,19 +480,19 @@
 
 <link name="Right_Head_Support">
   <inertial>
-    <origin xyz="0.011637998093553148 -0.0018817819041148792 0.007323212725077494" rpy="0 0 0"/>
-    <mass value="0.04"/>
-    <inertia ixx="5.3e-05" iyy="0.000496" izz="0.000544" ixy="0.000156" iyz="-4e-06" ixz="1e-05"/>
+    <origin xyz="0.011637829272109951 -0.001881781904114671 0.007323249590721337" rpy="0 0 0"/>
+    <mass value="0.020436827877729553"/>
+    <inertia ixx="7e-06" iyy="6.7e-05" izz="7.3e-05" ixy="2.1e-05" iyz="-1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.154585 0.109204 -0.211177" rpy="0 0 0"/>
+    <origin xyz="0.038833 0.109154 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.154585 0.109204 -0.211177" rpy="0 0 0"/>
+    <origin xyz="0.038833 0.109154 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -501,19 +501,19 @@
 
 <link name="Right_Front_Cover">
   <inertial>
-    <origin xyz="0.06371406608435315 0.038104119922451885 0.03733522780273715" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.001526" iyy="0.001228" izz="0.002112" ixy="-0.000297" iyz="-0.000419" ixz="-0.000298"/>
+    <origin xyz="-0.05203710273709028 0.03805411992245154 -0.04812673533161882" rpy="0 0 0"/>
+    <mass value="0.053605686719820106"/>
+    <inertia ixx="0.000146" iyy="0.000117" izz="0.000202" ixy="-2.8e-05" iyz="-4e-05" ixz="-2.9e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.067451 0.137238 -0.222133" rpy="0 0 0"/>
+    <origin xyz="-0.164052 0.137138 -0.393057" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.067451 0.137238 -0.222133" rpy="0 0 0"/>
+    <origin xyz="-0.164052 0.137138 -0.393057" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -522,19 +522,19 @@
 
 <link name="Left_Eye">
   <inertial>
-    <origin xyz="0.004305465983342725 -0.022700255663295345 0.021498996985650026" rpy="0 0 0"/>
-    <mass value="0.02"/>
-    <inertia ixx="4.7e-05" iyy="2.9e-05" izz="2.4e-05" ixy="2e-06" iyz="2e-06" ixz="-3e-06"/>
+    <origin xyz="0.004306297161899231 -0.02270025566329551 0.021499033851293814" rpy="0 0 0"/>
+    <mass value="0.010759900541269532"/>
+    <inertia ixx="4e-06" iyy="3e-06" izz="2e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.027292 -0.075445 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.143043 -0.075495 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="-0.027292 -0.075445 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.143043 -0.075495 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Eye.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -543,19 +543,19 @@
 
 <link name="Right_Holder">
   <inertial>
-    <origin xyz="0.06609948580700283 -0.02032523117912352 -0.00047823216167243443" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000331" iyy="0.001536" izz="0.001298" ixy="0.000176" iyz="-1.1e-05" ixz="0.000301"/>
+    <origin xyz="0.06610031698555954 -0.020325231179123923 -0.0004781872573996204" rpy="0 0 0"/>
+    <mass value="0.03611281660144922"/>
+    <inertia ixx="3.2e-05" iyy="0.000147" izz="0.000124" ixy="1.7e-05" iyz="-1e-06" ixz="2.9e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.1581 0.090997 -0.065042" rpy="0 0 0"/>
+    <origin xyz="0.042349 0.090947 -0.150304" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.1581 0.090997 -0.065042" rpy="0 0 0"/>
+    <origin xyz="0.042349 0.090947 -0.150304" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -564,19 +564,19 @@
 
 <link name="Left_Head_Support">
   <inertial>
-    <origin xyz="-0.08389400182812579 -0.027679558737785256 0.007323212722927103" rpy="0 0 0"/>
-    <mass value="0.04"/>
-    <inertia ixx="5.3e-05" iyy="0.000496" izz="0.000544" ixy="-0.000156" iyz="4e-06" ixz="1e-05"/>
+    <origin xyz="-0.08389317064956897 -0.027679558737785118 0.007323249588571001" rpy="0 0 0"/>
+    <mass value="0.020436827848287157"/>
+    <inertia ixx="7e-06" iyy="6.7e-05" izz="7.3e-05" ixy="-2.1e-05" iyz="1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.059053 -0.12318 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.056698 -0.12323 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.059053 -0.12318 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.056698 -0.12323 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Head_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -585,19 +585,19 @@
 
 <link name="Left_Front_Cover">
   <inertial>
-    <origin xyz="0.06404526177304333 -0.039863485997649925 0.036328075039944424" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.001434" iyy="0.001196" izz="0.001996" ixy="0.000261" iyz="0.000401" ixz="-0.000291"/>
+    <origin xyz="0.06404609295159996 -0.03986348599764998 0.03632811190558821" rpy="0 0 0"/>
+    <mass value="0.05247574794931451"/>
+    <inertia ixx="0.000137" iyy="0.000114" izz="0.000191" ixy="2.5e-05" iyz="3.8e-05" ixz="-2.8e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.067651 -0.121453 -0.222133" rpy="0 0 0"/>
+    <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.067651 -0.121453 -0.222133" rpy="0 0 0"/>
+    <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Front_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -606,19 +606,19 @@
 
 <link name="Battery_Holder">
   <inertial>
-    <origin xyz="-0.011259416276334366 -1.3798384356045059e-08 0.07421425645405398" rpy="0 0 0"/>
-    <mass value="0.18"/>
-    <inertia ixx="0.003194" iyy="0.002315" izz="0.000949" ixy="-0.0" iyz="-0.0" ixz="7.7e-05"/>
+    <origin xyz="-0.011259585097777573 -1.3798384701850486e-08 0.07421430135832703" rpy="0 0 0"/>
+    <mass value="0.16209189271424795"/>
+    <inertia ixx="0.000431" iyy="0.000313" izz="0.000128" ixy="-0.0" iyz="-0.0" ixz="1e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.157777 -0.0 0.083128" rpy="0 0 0"/>
+    <origin xyz="0.042025 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Battery_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.157777 -0.0 0.083128" rpy="0 0 0"/>
+    <origin xyz="0.042025 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Battery_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -627,19 +627,19 @@
 
 <link name="Left_Cable_Support">
   <inertial>
-    <origin xyz="-0.004644070191416319 -0.01208768916895124 -0.0029429951410525727" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000111" iyy="0.000115" izz="0.000123" ixy="1.3e-05" iyz="-3e-06" ixz="9e-06"/>
+    <origin xyz="-0.004644239012859805 -0.01208768916895181 -0.002942950236779651" rpy="0 0 0"/>
+    <mass value="0.05527465492344571"/>
+    <inertia ixx="1.5e-05" iyy="1.6e-05" izz="1.7e-05" ixy="2e-06" iyz="-0.0" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.0112 -0.092343 -0.029633" rpy="0 0 0"/>
+    <origin xyz="-0.104552 -0.092393 -0.114895" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.0112 -0.092343 -0.029633" rpy="0 0 0"/>
+    <origin xyz="-0.104552 -0.092393 -0.114895" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Cable_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -648,19 +648,19 @@
 
 <link name="Battery">
   <inertial>
-    <origin xyz="-0.03187265490613192 0.027499996948243 -0.04652437688573792" rpy="0 0 0"/>
-    <mass value="1.25"/>
-    <inertia ixx="0.020895" iyy="0.020316" izz="0.008316" ixy="0.0" iyz="-0.0" ixz="-0.000252"/>
+    <origin xyz="-0.14762482372757507 0.027449996948242683 -0.1317863319814649" rpy="0 0 0"/>
+    <mass value="1.073094288437329"/>
+    <inertia ixx="0.002821" iyy="0.002743" izz="0.001123" ixy="-0.0" iyz="0.0" ixz="-3.4e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.181916 0.0278 -0.062202" rpy="0 0 0"/>
+    <origin xyz="-0.049588 0.0277 -0.232726" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.181916 0.0278 -0.062202" rpy="0 0 0"/>
+    <origin xyz="-0.049588 0.0277 -0.232726" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Battery.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -669,19 +669,19 @@
 
 <link name="Back_Support">
   <inertial>
-    <origin xyz="-0.016338021517123075 0.0008580361176538957 0.07859162736607851" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.007073" iyy="0.003535" izz="0.004743" ixy="6e-06" iyz="-2.5e-05" ixz="0.000348"/>
+    <origin xyz="-0.016104174416382754 0.0008386399628445651 0.07638590730044101" rpy="0 0 0"/>
+    <mass value="0.19818519083453695"/>
+    <inertia ixx="0.000997" iyy="0.00052" izz="0.000641" ixy="1e-06" iyz="-4e-06" ixz="5.1e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.175801 -0.0 0.083128" rpy="0 0 0"/>
+    <origin xyz="0.060049 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Back_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.175801 -0.0 0.083128" rpy="0 0 0"/>
+    <origin xyz="0.060049 -5e-05 -0.002134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Back_Support.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -690,19 +690,19 @@
 
 <link name="Rear_Cover">
   <inertial>
-    <origin xyz="-0.03794240173132701 0.015442933458322853 0.0814395200361534" rpy="0 0 0"/>
-    <mass value="0.15"/>
-    <inertia ixx="0.003477" iyy="0.002602" izz="0.002166" ixy="0.0" iyz="-0.0" ixz="0.000505"/>
+    <origin xyz="-0.03794257055277014 0.015442933458322552 0.08143956494042648" rpy="0 0 0"/>
+    <mass value="0.31819716922538754"/>
+    <inertia ixx="0.00246" iyy="0.001841" izz="0.001533" ixy="0.0" iyz="-0.0" ixz="0.000357"/>
   </inertial>
   <visual>
-    <origin xyz="0.1701 0.014557 0.114984" rpy="0 0 0"/>
+    <origin xyz="0.054348 0.014507 0.029722" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Rear_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.1701 0.014557 0.114984" rpy="0 0 0"/>
+    <origin xyz="0.054348 0.014507 0.029722" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Rear_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -711,124 +711,40 @@
 
 <link name="Face">
   <inertial>
-    <origin xyz="0.011943852998891849 0.12499479733891719 0.028008886798106536" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.00292" iyy="0.000177" izz="0.002764" ixy="-0.0" iyz="-0.0" ixz="-1.2e-05"/>
+    <origin xyz="0.0119446841774484 0.12499479733891704 0.02800892366375035" rpy="0 0 0"/>
+    <mass value="0.036547681364044626"/>
+    <inertia ixx="0.000279" iyy="1.7e-05" izz="0.000264" ixy="-0.0" iyz="-0.0" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.021655 0.1327 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.137406 0.13265 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Face.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="-0.021655 0.1327 -0.211177" rpy="0 0 0"/>
+    <origin xyz="-0.137406 0.13265 -0.296639" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Face.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Head_Rear_Cover">
-  <inertial>
-    <origin xyz="0.08331733267288 -0.0827113807216886 0.032305141293038436" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.012409" iyy="0.009472" izz="0.02046" ixy="0.0" iyz="-0.0" ixz="-0.001544"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.219939 -0.07291 -0.225685" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Rear_Cover.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.219939 -0.07291 -0.225685" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Head_Rear_Cover.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Rear_Head_Plate">
-  <inertial>
-    <origin xyz="0.029815672547195776 -0.03832797900921875 -0.0072363242913547066" rpy="0 0 0"/>
-    <mass value="0.05"/>
-    <inertia ixx="0.000437" iyy="6.4e-05" izz="0.000499" ixy="-1e-06" iyz="-2e-06" ixz="7e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.241988 -0.02852 -0.219724" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.241988 -0.02852 -0.219724" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Right_Ear">
-  <inertial>
-    <origin xyz="-0.005811711153872301 -0.015596191586685682 0.011330324454533136" rpy="0 0 0"/>
-    <mass value="0.01"/>
-    <inertia ixx="5.7e-05" iyy="5.6e-05" izz="1.3e-05" ixy="-1e-06" iyz="-1.1e-05" ixz="-4e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.204379 0.095672 -0.238444" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="black"/>
-  </visual>
-  <collision>
-    <origin xyz="0.204379 0.095672 -0.238444" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Left_Ear">
-  <inertial>
-    <origin xyz="-0.005811724239387417 0.015596486363236892 0.011330310579899" rpy="0 0 0"/>
-    <mass value="0.01"/>
-    <inertia ixx="5.7e-05" iyy="5.6e-05" izz="1.3e-05" ixy="1e-06" iyz="1.1e-05" ixz="-4e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.204379 -0.076069 -0.238444" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="black"/>
-  </visual>
-  <collision>
-    <origin xyz="0.204379 -0.076069 -0.238444" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="Left_Hip_Top_Holder">
   <inertial>
-    <origin xyz="0.001620339630348147 0.003199118205156136 -0.011367269424634858" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000247" iyy="0.000261" izz="0.000411" ixy="-5e-06" iyz="1.1e-05" ixz="2.3e-05"/>
+    <origin xyz="0.0016201708089048882 0.0031991182051557335 -0.011367224520361888" rpy="0 0 0"/>
+    <mass value="0.08211265972988092"/>
+    <inertia ixx="3.3e-05" iyy="3.5e-05" izz="5.6e-05" ixy="-1e-06" iyz="1e-06" ixz="3e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.103104 -0.05 -0.021836" rpy="0 0 0"/>
+    <origin xyz="-0.012648 -0.05005 -0.107098" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.103104 -0.05 -0.021836" rpy="0 0 0"/>
+    <origin xyz="-0.012648 -0.05005 -0.107098" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -837,19 +753,19 @@
 
 <link name="Left_Hip_Roll_Motor">
   <inertial>
-    <origin xyz="-0.021159834492361487 -0.018728479075643942 -0.045226511285539436" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="-0.021160003313804764 -0.018728479075644316 -0.045226466381266366" rpy="0 0 0"/>
+    <mass value="0.9069870657157226"/>
     <inertia ixx="0.001212" iyy="0.000876" izz="0.000914" ixy="-6e-06" iyz="1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.087604 -0.081251 -0.004562" rpy="0 0 0"/>
+    <origin xyz="-0.028148 -0.081301 -0.089824" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.087604 -0.081251 -0.004562" rpy="0 0 0"/>
+    <origin xyz="-0.028148 -0.081301 -0.089824" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -858,19 +774,19 @@
 
 <link name="Left_Hip_Roll_Connector">
   <inertial>
-    <origin xyz="0.002335664392586173 0.029320353571005348 9.417102428823515e-05" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.000314" iyy="7e-05" izz="0.000291" ixy="3.6e-05" iyz="-1e-06" ixz="1e-06"/>
+    <origin xyz="0.00233549557114289 0.02932035357100493 9.421592856129896e-05" rpy="0 0 0"/>
+    <mass value="0.09814593711615145"/>
+    <inertia ixx="0.000108" iyy="2.4e-05" izz="0.0001" ixy="1.2e-05" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.085104 -0.0625 0.040708" rpy="0 0 0"/>
+    <origin xyz="-0.030648 -0.06255 -0.044554" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.085104 -0.0625 0.040708" rpy="0 0 0"/>
+    <origin xyz="-0.030648 -0.06255 -0.044554" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -879,19 +795,19 @@
 
 <link name="Left_Hip_Pitch_Motor">
   <inertial>
-    <origin xyz="5.6098432924311936e-05 0.023752060752053467 -1.960358445661503e-05" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="5.592961148102177e-05 0.023752060752052995 -1.9558680183502652e-05" rpy="0 0 0"/>
+    <mass value="0.9104515289190356"/>
     <inertia ixx="0.000918" iyy="0.001215" izz="0.00088" ixy="-1e-06" iyz="-6e-06" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.09375 -0.13375 0.039367" rpy="0 0 0"/>
+    <origin xyz="-0.022002 -0.1338 -0.045895" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.09375 -0.13375 0.039367" rpy="0 0 0"/>
+    <origin xyz="-0.022002 -0.1338 -0.045895" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -900,19 +816,19 @@
 
 <link name="Left_Upper_Leg">
   <inertial>
-    <origin xyz="-0.024274386899796982 0.017265275383014395 -0.07879674213161575" rpy="0 0 0"/>
-    <mass value="0.5"/>
-    <inertia ixx="0.010775" iyy="0.01718" izz="0.011452" ixy="-0.000235" iyz="-6.7e-05" ixz="-0.003926"/>
+    <origin xyz="-0.024274555721240165 0.017265275383014006 -0.07879669722734255" rpy="0 0 0"/>
+    <mass value="0.5655536567558276"/>
+    <inertia ixx="0.001455" iyy="0.00232" izz="0.001546" ixy="-3.2e-05" iyz="-9e-06" ixz="-0.00053"/>
   </inertial>
   <visual>
-    <origin xyz="0.112502 -0.13625 -0.005903" rpy="0 0 0"/>
+    <origin xyz="-0.00325 -0.1363 -0.091165" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.112502 -0.13625 -0.005903" rpy="0 0 0"/>
+    <origin xyz="-0.00325 -0.1363 -0.091165" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -921,19 +837,19 @@
 
 <link name="Left_Hip_Bottom_Holder">
   <inertial>
-    <origin xyz="-0.013282968414174659 -0.026326672892584876 -0.002967894724794959" rpy="0 0 0"/>
-    <mass value="0.075"/>
-    <inertia ixx="0.000162" iyy="0.000187" izz="0.000281" ixy="-3e-06" iyz="-3e-06" ixz="-2e-05"/>
+    <origin xyz="-0.013283137235617878 -0.026326672892585272 -0.0029678498205217897" rpy="0 0 0"/>
+    <mass value="0.06006501163237421"/>
+    <inertia ixx="2.2e-05" iyy="2.5e-05" izz="3.8e-05" ixy="-0.0" iyz="-0.0" ixz="-3e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.087604 -0.081251 0.085978" rpy="0 0 0"/>
+    <origin xyz="-0.028148 -0.081301 0.000716" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.087604 -0.081251 0.085978" rpy="0 0 0"/>
+    <origin xyz="-0.028148 -0.081301 0.000716" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -942,19 +858,19 @@
 
 <link name="Left_Knee_Motor">
   <inertial>
-    <origin xyz="0.04547915674534561 0.02125206065064683 0.018346688673824177" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="0.04547898792390253 0.02125206065064647 0.018346733578097484" rpy="0 0 0"/>
+    <mass value="0.9104515217073631"/>
     <inertia ixx="0.00088" iyy="0.001215" izz="0.000918" ixy="6e-06" iyz="-1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.218515 -0.13625 0.135366" rpy="0 0 0"/>
+    <origin xyz="0.102763 -0.1363 0.050104" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.218515 -0.13625 0.135366" rpy="0 0 0"/>
+    <origin xyz="0.102763 -0.1363 0.050104" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -963,19 +879,19 @@
 
 <link name="Left_Lower_Leg">
   <inertial>
-    <origin xyz="0.01228337899144813 -0.021155087740907783 -0.06539085298683191" rpy="0 0 0"/>
-    <mass value="0.33"/>
-    <inertia ixx="0.009108" iyy="0.011365" izz="0.003048" ixy="0.000146" iyz="-0.000492" ixz="0.00238"/>
+    <origin xyz="0.01228321017000504 -0.02115508774090813 -0.06539180808255851" rpy="0 0 0"/>
+    <mass value="0.3868529143335189"/>
+    <inertia ixx="0.00123" iyy="0.001535" izz="0.000412" ixy="2e-05" iyz="-6.6e-05" ixz="0.000321"/>
   </inertial>
   <visual>
-    <origin xyz="0.173056 -0.13375 0.117076" rpy="0 0 0"/>
+    <origin xyz="0.057304 -0.1338 0.031813" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.173056 -0.13375 0.117076" rpy="0 0 0"/>
+    <origin xyz="0.057304 -0.1338 0.031813" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -984,19 +900,19 @@
 
 <link name="Left_Ankle_Cover">
   <inertial>
-    <origin xyz="-0.027270245946545174 -0.006354271007748602 -0.03249972084160155" rpy="0 0 0"/>
-    <mass value="0.01"/>
-    <inertia ixx="5.6e-05" iyy="0.00011" izz="5.6e-05" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+    <origin xyz="-0.02727041476798828 -0.006354271007749046 -0.03249967593732811" rpy="0 0 0"/>
+    <mass value="0.014202085744813586"/>
+    <inertia ixx="7e-06" iyy="1.5e-05" izz="7e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.100637 -0.088373 0.214654" rpy="0 0 0"/>
+    <origin xyz="-0.015115 -0.088423 0.129392" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.100637 -0.088373 0.214654" rpy="0 0 0"/>
+    <origin xyz="-0.015115 -0.088423 0.129392" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1005,19 +921,19 @@
 
 <link name="Left_Ankle_Motor">
   <inertial>
-    <origin xyz="0.03653438846867732 -0.016897817934434525 -0.007243751472622906" rpy="0 0 0"/>
-    <mass value="0.405"/>
-    <inertia ixx="0.000222" iyy="0.000317" izz="0.000221" ixy="-1e-06" iyz="-1e-06" ixz="4e-06"/>
+    <origin xyz="0.036534219647234197 -0.01689781793443494 -0.007243706568349384" rpy="0 0 0"/>
+    <mass value="0.43362988206706554"/>
+    <inertia ixx="0.000297" iyy="0.000423" izz="0.000296" ixy="-1e-06" iyz="-2e-06" ixz="6e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.163925 -0.12441 0.241241" rpy="0 0 0"/>
+    <origin xyz="0.048173 -0.12446 0.155979" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.163925 -0.12441 0.241241" rpy="0 0 0"/>
+    <origin xyz="0.048173 -0.12446 0.155979" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1026,19 +942,19 @@
 
 <link name="Left_Foot">
   <inertial>
-    <origin xyz="0.026140190232641594 -0.004665544761849286 -0.03919202511141026" rpy="0 0 0"/>
-    <mass value="0.22"/>
-    <inertia ixx="0.001447" iyy="0.004937" izz="0.004441" ixy="0.000142" iyz="-0.000331" ixz="0.000184"/>
+    <origin xyz="0.026140021411198415 -0.00466554476184973 -0.03919198020713663" rpy="0 0 0"/>
+    <mass value="0.253738845261166"/>
+    <inertia ixx="0.000195" iyy="0.000667" izz="0.0006" ixy="1.9e-05" iyz="-4.5e-05" ixz="2.5e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.127907 -0.12841 0.247154" rpy="0 0 0"/>
+    <origin xyz="0.012155 -0.12846 0.161892" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.127907 -0.12841 0.247154" rpy="0 0 0"/>
+    <origin xyz="0.012155 -0.12846 0.161892" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1047,19 +963,19 @@
 
 <link name="Left_Foot_Pad">
   <inertial>
-    <origin xyz="-0.07949973500448938 0.007701291700105098 -0.014067147123335288" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000118" iyy="0.001881" izz="0.001957" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+    <origin xyz="-0.19525190382593252 0.007651291700104659 -0.09932910221906163" rpy="0 0 0"/>
+    <mass value="0.11120287867405936"/>
+    <inertia ixx="1.6e-05" iyy="0.000254" izz="0.000264" ixy="0.0" iyz="-0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.021227 -0.102728 0.304692" rpy="0 0 0"/>
+    <origin xyz="-0.210277 -0.102828 0.134168" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.021227 -0.102728 0.304692" rpy="0 0 0"/>
+    <origin xyz="-0.210277 -0.102828 0.134168" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1068,19 +984,19 @@
 
 <link name="Left_Foot_Cover">
   <inertial>
-    <origin xyz="-0.053451799495267266 -0.014305764488522194 0.02131127529122606" rpy="0 0 0"/>
-    <mass value="0.02"/>
-    <inertia ixx="0.000477" iyy="0.000977" izz="0.000856" ixy="0.000178" iyz="3.8e-05" ixz="6.1e-05"/>
+    <origin xyz="-0.05345196831671044 -0.014305764488522638 0.021311320195499583" rpy="0 0 0"/>
+    <mass value="0.03752369551950594"/>
+    <inertia ixx="6.4e-05" iyy="0.000132" izz="0.000116" ixy="2.4e-05" iyz="5e-06" ixz="8e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.025271 -0.14191 0.296057" rpy="0 0 0"/>
+    <origin xyz="-0.090481 -0.14196 0.210795" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.025271 -0.14191 0.296057" rpy="0 0 0"/>
+    <origin xyz="-0.090481 -0.14196 0.210795" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1089,19 +1005,19 @@
 
 <link name="Left_Upper_Leg_Cover">
   <inertial>
-    <origin xyz="-0.04094111873015039 0.0009368348399820814 0.03898547248219009" rpy="0 0 0"/>
-    <mass value="0.075"/>
-    <inertia ixx="0.000665" iyy="0.002193" izz="0.001753" ixy="6.4e-05" iyz="4e-05" ixz="-5.9e-05"/>
+    <origin xyz="-0.04094028755159368 0.0009368348399816373 0.03898551738646317" rpy="0 0 0"/>
+    <mass value="0.0636117280594398"/>
+    <inertia ixx="9e-05" iyy="0.000296" izz="0.000237" ixy="9e-06" iyz="5e-06" ixz="-8e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.0536 -0.18275 0.069166" rpy="0 0 0"/>
+    <origin xyz="-0.062151 -0.1828 -0.016096" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.0536 -0.18275 0.069166" rpy="0 0 0"/>
+    <origin xyz="-0.062151 -0.1828 -0.016096" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1110,19 +1026,19 @@
 
 <link name="Left_Lower_Leg_Cover">
   <inertial>
-    <origin xyz="0.06560703572592197 -0.00028822546645815295 -0.02091617740825974" rpy="0 0 0"/>
-    <mass value="0.057"/>
-    <inertia ixx="0.000743" iyy="0.002662" izz="0.002147" ixy="6.7e-05" iyz="-2.3e-05" ixz="-0.00039"/>
+    <origin xyz="0.06560686690447881 -0.0002882254664585415 -0.020917132503986417" rpy="0 0 0"/>
+    <mass value="0.09180221523312034"/>
+    <inertia ixx="0.0001" iyy="0.000359" izz="0.00029" ixy="9e-06" iyz="-3e-06" ixz="-5.3e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.218742 -0.18275 0.106038" rpy="0 0 0"/>
+    <origin xyz="0.10299 -0.1828 0.020775" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.218742 -0.18275 0.106038" rpy="0 0 0"/>
+    <origin xyz="0.10299 -0.1828 0.020775" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1131,19 +1047,19 @@
 
 <link name="Left_Upper_Leg_Detail">
   <inertial>
-    <origin xyz="-0.024382609846147235 -0.001117219617139703 -0.0289948889081118" rpy="0 0 0"/>
-    <mass value="0.01"/>
-    <inertia ixx="7e-06" iyy="1.4e-05" izz="7e-06" ixy="-0.0" iyz="0.0" ixz="-6e-06"/>
+    <origin xyz="-0.14013477866759042 -0.0011672196171401417 -0.11425684400383858" rpy="0 0 0"/>
+    <mass value="0.004967595085878627"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.147212 -0.194574 0.02471" rpy="0 0 0"/>
+    <origin xyz="-0.084292 -0.194674 -0.145814" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="neon_green"/>
+    <material name="green"/>
   </visual>
   <collision>
-    <origin xyz="0.147212 -0.194574 0.02471" rpy="0 0 0"/>
+    <origin xyz="-0.084292 -0.194674 -0.145814" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1152,61 +1068,40 @@
 
 <link name="Camera_Mount">
   <inertial>
-    <origin xyz="-0.006172802438076906 -0.05152638875020519 -0.029338829033211014" rpy="0 0 0"/>
-    <mass value="0.04"/>
-    <inertia ixx="0.000378" iyy="0.000119" izz="0.000303" ixy="-1e-06" iyz="-1e-06" ixz="-4e-06"/>
+    <origin xyz="-0.12192471777741526 -0.051575919397205974 -0.11460078411393831" rpy="0 0 0"/>
+    <mass value="0.032111017172493185"/>
+    <inertia ixx="5.1e-05" iyy="1.6e-05" izz="4.1e-05" ixy="-0.0" iyz="-0.0" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.055472 -0.05185 -0.067121" rpy="0 0 0"/>
+    <origin xyz="-0.286789 -0.05445 -0.237645" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Camera_Mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="-0.055472 -0.05185 -0.067121" rpy="0 0 0"/>
+    <origin xyz="-0.286789 -0.05445 -0.237645" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Camera_Mount.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Front_Grill">
-  <inertial>
-    <origin xyz="0.7853577261782467 -7.976529449557797e-08 0.03431005289568136" rpy="0 0 0"/>
-    <mass value="0.01"/>
-    <inertia ixx="0.000159" iyy="5.8e-05" izz="0.000102" ixy="-0.0" iyz="-0.0" ixz="-1e-06"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.73149 5e-05 0.096643" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Front_Grill.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="black"/>
-  </visual>
-  <collision>
-    <origin xyz="0.73149 5e-05 0.096643" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="package://URDF_description/meshes/Front_Grill.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="Rear_Antenna_Box">
   <inertial>
-    <origin xyz="-0.02263711361821996 0.04955083424974197 -0.008123552746643014" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.001016" iyy="0.000514" izz="0.000582" ixy="-0.0" iyz="-1e-06" ixz="1e-05"/>
+    <origin xyz="-0.02263728243966298 0.04955083424974171 -0.008123507842369954" rpy="0 0 0"/>
+    <mass value="0.04117094798631419"/>
+    <inertia ixx="9.7e-05" iyy="4.9e-05" izz="5.6e-05" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.260006 0.048172 -0.008698" rpy="0 0 0"/>
+    <origin xyz="0.144254 0.048122 -0.09396" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Rear_Antenna_Box.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.260006 0.048172 -0.008698" rpy="0 0 0"/>
+    <origin xyz="0.144254 0.048122 -0.09396" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Rear_Antenna_Box.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1215,19 +1110,19 @@
 
 <link name="Right_Hip_Top_Holder">
   <inertial>
-    <origin xyz="0.0016203396303476614 -0.0031991182051551922 -0.013107269424634851" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000247" iyy="0.000261" izz="0.000411" ixy="5e-06" iyz="-1.1e-05" ixz="2.3e-05"/>
+    <origin xyz="0.001620173636261317 -0.0031991133080298204 -0.013107224520361935" rpy="0 0 0"/>
+    <mass value="0.08211265972988097"/>
+    <inertia ixx="3.3e-05" iyy="3.5e-05" izz="5.6e-05" ixy="1e-06" iyz="-1e-06" ixz="3e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.103104 0.05 -0.021836" rpy="0 0 0"/>
+    <origin xyz="-0.012648 0.04995 -0.107098" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.103104 0.05 -0.021836" rpy="0 0 0"/>
+    <origin xyz="-0.012648 0.04995 -0.107098" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Top_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1236,19 +1131,19 @@
 
 <link name="Right_Hip_Roll_Motor">
   <inertial>
-    <origin xyz="-0.02115983744229838 -0.018773521351088125 -0.045226514927495506" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="-0.021160003436384685 -0.018773516453962746 -0.04522647002322248" rpy="0 0 0"/>
+    <mass value="0.9069872059005614"/>
     <inertia ixx="0.001212" iyy="0.000876" izz="0.000914" ixy="6e-06" iyz="-1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.087604 0.043749 -0.002822" rpy="0 0 0"/>
+    <origin xyz="-0.028148 0.043699 -0.088084" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.087604 0.043749 -0.002822" rpy="0 0 0"/>
+    <origin xyz="-0.028148 0.043699 -0.088084" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1257,19 +1152,19 @@
 
 <link name="Right_Hip_Roll_Connector">
   <inertial>
-    <origin xyz="0.002335666610867357 -0.029320346006172324 9.417077243262933e-05" rpy="0 0 0"/>
-    <mass value="0.1"/>
-    <inertia ixx="0.000314" iyy="7e-05" izz="0.000291" ixy="-3.6e-05" iyz="1e-06" ixz="1e-06"/>
+    <origin xyz="0.0023355006167810194 -0.029320341109046945 9.421567670562375e-05" rpy="0 0 0"/>
+    <mass value="0.09814591729138275"/>
+    <inertia ixx="0.000108" iyy="2.4e-05" izz="0.0001" ixy="-1.2e-05" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.085104 0.0625 0.042448" rpy="0 0 0"/>
+    <origin xyz="-0.030648 0.06245 -0.042814" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.085104 0.0625 0.042448" rpy="0 0 0"/>
+    <origin xyz="-0.030648 0.06245 -0.042814" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Roll_Connector.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1278,19 +1173,19 @@
 
 <link name="Right_Hip_Bottom_Holder">
   <inertial>
-    <origin xyz="-0.013282968414175061 -0.011175327107414403 -0.002967894724794931" rpy="0 0 0"/>
-    <mass value="0.075"/>
-    <inertia ixx="0.000162" iyy="0.000187" izz="0.000281" ixy="3e-06" iyz="3e-06" ixz="-2e-05"/>
+    <origin xyz="-0.013283134408261378 -0.011175322210289045 -0.0029678498205218205" rpy="0 0 0"/>
+    <mass value="0.060065011632374196"/>
+    <inertia ixx="2.2e-05" iyy="2.5e-05" izz="3.8e-05" ixy="0.0" iyz="0.0" ixz="-3e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.087604 0.043749 0.087718" rpy="0 0 0"/>
+    <origin xyz="-0.028148 0.043699 0.002456" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.087604 0.043749 0.087718" rpy="0 0 0"/>
+    <origin xyz="-0.028148 0.043699 0.002456" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Bottom_Holder.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1299,19 +1194,19 @@
 
 <link name="Right_Hip_Pitch_Motor">
   <inertial>
-    <origin xyz="5.616069849591343e-05 -0.02375185846748501 -1.930368501875529e-05" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="5.599470440959681e-05 -0.023751853570359555 -1.925878074578863e-05" rpy="0 0 0"/>
+    <mass value="0.9104438192734086"/>
     <inertia ixx="0.000918" iyy="0.001215" izz="0.00088" ixy="1e-06" iyz="6e-06" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.09375 0.13375 0.041107" rpy="0 0 0"/>
+    <origin xyz="-0.022002 0.1337 -0.044155" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.09375 0.13375 0.041107" rpy="0 0 0"/>
+    <origin xyz="-0.022002 0.1337 -0.044155" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Hip_Pitch_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1320,19 +1215,19 @@
 
 <link name="Right_Upper_Leg">
   <inertial>
-    <origin xyz="-0.024280788003814238 -0.01724218437940858 -0.07876915040784153" rpy="0 0 0"/>
-    <mass value="0.5"/>
-    <inertia ixx="0.01076" iyy="0.017182" izz="0.011445" ixy="0.000229" iyz="6.8e-05" ixz="-0.003927"/>
+    <origin xyz="-0.024280953997900444 -0.017242179482283126 -0.07876910550356848" rpy="0 0 0"/>
+    <mass value="0.5655879310958503"/>
+    <inertia ixx="0.001453" iyy="0.00232" izz="0.001545" ixy="3.1e-05" iyz="9e-06" ixz="-0.00053"/>
   </inertial>
   <visual>
-    <origin xyz="0.112502 0.13625 -0.004163" rpy="0 0 0"/>
+    <origin xyz="-0.00325 0.1362 -0.089425" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.112502 0.13625 -0.004163" rpy="0 0 0"/>
+    <origin xyz="-0.00325 0.1362 -0.089425" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Upper_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1341,19 +1236,19 @@
 
 <link name="Right_Knee_Motor">
   <inertial>
-    <origin xyz="0.018309857504870547 -0.02125185844982999 -0.04540224600480196" rpy="0 0 0"/>
-    <mass value="0.920"/>
+    <origin xyz="0.018309691510784445 -0.02125185355270451 -0.045402201100528804" rpy="0 0 0"/>
+    <mass value="0.9104438184284508"/>
     <inertia ixx="0.00088" iyy="0.001215" izz="0.000918" ixy="-6e-06" iyz="1e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.191346 0.13625 0.073357" rpy="0 0 0"/>
+    <origin xyz="0.075594 0.1362 -0.011905" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.191346 0.13625 0.073357" rpy="0 0 0"/>
+    <origin xyz="0.075594 0.1362 -0.011905" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Knee_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1362,19 +1257,19 @@
 
 <link name="Right_Lower_Leg">
   <inertial>
-    <origin xyz="0.012283378986732457 0.021155087755956675 -0.06539085299584874" rpy="0 0 0"/>
-    <mass value="0.33"/>
-    <inertia ixx="0.009108" iyy="0.011365" izz="0.003048" ixy="-0.000146" iyz="0.000492" ixz="0.00238"/>
+    <origin xyz="0.012283212992646328 0.02115509265308213 -0.06539180809157544" rpy="0 0 0"/>
+    <mass value="0.38685291363183144"/>
+    <inertia ixx="0.00123" iyy="0.001535" izz="0.000412" ixy="-2e-05" iyz="6.6e-05" ixz="0.000321"/>
   </inertial>
   <visual>
-    <origin xyz="0.173056 0.13375 0.118816" rpy="0 0 0"/>
+    <origin xyz="0.057304 0.1337 0.033553" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.173056 0.13375 0.118816" rpy="0 0 0"/>
+    <origin xyz="0.057304 0.1337 0.033553" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Lower_Leg.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1383,19 +1278,19 @@
 
 <link name="Right_Ankle_Motor">
   <inertial>
-    <origin xyz="0.0009483882402769872 0.01689783037999794 -0.03782875073492001" rpy="0 0 0"/>
-    <mass value="0.405"/>
-    <inertia ixx="0.000222" iyy="0.000317" izz="0.000221" ixy="1e-06" iyz="1e-06" ixz="4e-06"/>
+    <origin xyz="0.0009482222461908198 0.016897835277123324 -0.0378287058306466" rpy="0 0 0"/>
+    <mass value="0.43363012395690076"/>
+    <inertia ixx="0.000297" iyy="0.000423" izz="0.000296" ixy="1e-06" iyz="2e-06" ixz="6e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.128339 0.12441 0.212396" rpy="0 0 0"/>
+    <origin xyz="0.012587 0.12436 0.127134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.128339 0.12441 0.212396" rpy="0 0 0"/>
+    <origin xyz="0.012587 0.12436 0.127134" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Ankle_Motor.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1404,19 +1299,19 @@
 
 <link name="Right_Foot">
   <inertial>
-    <origin xyz="0.026140190232409544 0.004665544761157922 -0.03919202511095865" rpy="0 0 0"/>
-    <mass value="0.22"/>
-    <inertia ixx="0.001447" iyy="0.004937" izz="0.004441" ixy="-0.000142" iyz="0.000331" ixz="0.000184"/>
+    <origin xyz="0.026140024238323352 0.0046655496582833494 -0.039191980206685156" rpy="0 0 0"/>
+    <mass value="0.25373884525351503"/>
+    <inertia ixx="0.000195" iyy="0.000667" izz="0.0006" ixy="-1.9e-05" iyz="4.5e-05" ixz="2.5e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.127907 0.12841 0.248894" rpy="0 0 0"/>
+    <origin xyz="0.012155 0.12836 0.163632" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.127907 0.12841 0.248894" rpy="0 0 0"/>
+    <origin xyz="0.012155 0.12836 0.163632" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Foot.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1425,19 +1320,19 @@
 
 <link name="Right_Foot_Pad">
   <inertial>
-    <origin xyz="-0.07949973500530857 4.481661704247575e-07 -0.012327147151143913" rpy="0 0 0"/>
-    <mass value="0.08"/>
-    <inertia ixx="0.000118" iyy="0.001881" izz="0.001957" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+    <origin xyz="-0.07949990099939477 4.5306329575500737e-07 -0.012327102246870308" rpy="0 0 0"/>
+    <mass value="0.11120287867405933"/>
+    <inertia ixx="1.6e-05" iyy="0.000254" izz="0.000264" ixy="-0.0" iyz="0.0" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.021227 0.110385 0.308172" rpy="0 0 0"/>
+    <origin xyz="-0.094525 0.110335 0.22291" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.021227 0.110385 0.308172" rpy="0 0 0"/>
+    <origin xyz="-0.094525 0.110335 0.22291" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Foot_Pad.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1446,19 +1341,19 @@
 
 <link name="Right_Foot_Cover">
   <inertial>
-    <origin xyz="0.09107013259634836 0.01441065685321713 0.015230989404046102" rpy="0 0 0"/>
-    <mass value="0.02"/>
-    <inertia ixx="0.000512" iyy="0.001003" izz="0.000864" ixy="-0.000182" iyz="-4.9e-05" ixz="5.3e-05"/>
+    <origin xyz="0.0910699666022621 0.014410661750342474 0.015231034308319569" rpy="0 0 0"/>
+    <mass value="0.037524104890090594"/>
+    <inertia ixx="6.9e-05" iyy="0.000136" izz="0.000117" ixy="-2.5e-05" iyz="-7e-06" ixz="7e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.169659 0.14191 0.291438" rpy="0 0 0"/>
+    <origin xyz="0.053907 0.14186 0.206176" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.169659 0.14191 0.291438" rpy="0 0 0"/>
+    <origin xyz="0.053907 0.14186 0.206176" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Foot_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1467,61 +1362,61 @@
 
 <link name="Right_Upper_Leg_Cover">
   <inertial>
-    <origin xyz="-0.040941118728582644 -0.0009368348396377457 0.03898547248163051" rpy="0 0 0"/>
-    <mass value="0.075"/>
-    <inertia ixx="0.000665" iyy="0.002193" izz="0.001753" ixy="-6.4e-05" iyz="-4e-05" ixz="-5.9e-05"/>
+    <origin xyz="-0.04094028472266894 -0.0009368299425123183 0.038985517385903466" rpy="0 0 0"/>
+    <mass value="0.0636117280607867"/>
+    <inertia ixx="9e-05" iyy="0.000296" izz="0.000237" ixy="-9e-06" iyz="-5e-06" ixz="-8e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.0536 0.18275 0.070906" rpy="0 0 0"/>
+    <origin xyz="-0.062151 0.1827 -0.014356" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.0536 0.18275 0.070906" rpy="0 0 0"/>
+    <origin xyz="-0.062151 0.1827 -0.014356" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<link name="Right_Lower_Leg_Cover">
+<link name="Right_Lower_leg-Cover">
   <inertial>
-    <origin xyz="0.06369106428208968 -0.006050249496385718 -0.01748499012355735" rpy="0 0 0"/>
-    <mass value="0.057"/>
-    <inertia ixx="0.0004" iyy="0.001361" izz="0.001071" ixy="-1.4e-05" iyz="2.7e-05" ixz="-0.000208"/>
+    <origin xyz="0.06369089828800356 -0.006050244599260207 -0.01748594521928419" rpy="0 0 0"/>
+    <mass value="0.04937375027674599"/>
+    <inertia ixx="5.4e-05" iyy="0.000184" izz="0.000145" ixy="-2e-06" iyz="4e-06" ixz="-2.8e-05"/>
   </inertial>
   <visual>
-    <origin xyz="0.218742 0.18275 0.107778" rpy="0 0 0"/>
+    <origin xyz="0.10299 0.1827 0.022515" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://URDF_description/meshes/Right_Lower_leg-Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.218742 0.18275 0.107778" rpy="0 0 0"/>
+    <origin xyz="0.10299 0.1827 0.022515" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://URDF_description/meshes/Right_Lower_Leg_Cover.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="package://URDF_description/meshes/Right_Lower_leg-Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
 <link name="Right_Upper_Leg_Detail">
   <inertial>
-    <origin xyz="-0.022198918666951728 0.0005850710891872057 -0.026977756657009334" rpy="0 0 0"/>
-    <mass value="0.01"/>
-    <inertia ixx="7e-06" iyy="1.4e-05" izz="7e-06" ixy="0.0" iyz="-0.0" ixz="-6e-06"/>
+    <origin xyz="-0.13795108466103795 0.0005350759863127219 -0.11223971175273628" rpy="0 0 0"/>
+    <mass value="0.004967595005976366"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="-1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.147212 0.194574 0.02819" rpy="0 0 0"/>
+    <origin xyz="-0.084292 0.194474 -0.142334" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.147212 0.194574 0.02819" rpy="0 0 0"/>
+    <origin xyz="-0.084292 0.194474 -0.142334" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Upper_Leg_Detail.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1530,19 +1425,19 @@
 
 <link name="Right_Ankle_Cover">
   <inertial>
-    <origin xyz="0.027270754053454554 0.006354271007749365 0.03249927915839845" rpy="0 0 0"/>
-    <mass value="0.01"/>
-    <inertia ixx="5.6e-05" iyy="0.00011" izz="5.6e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+    <origin xyz="0.027270588059368384 0.006354275904874793 0.03249932406267192" rpy="0 0 0"/>
+    <mass value="0.014202085744813589"/>
+    <inertia ixx="7e-06" iyy="1.5e-05" izz="7e-06" ixy="0.0" iyz="0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.155178 0.088373 0.281393" rpy="0 0 0"/>
+    <origin xyz="0.039426 0.088323 0.196131" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="neon_green"/>
   </visual>
   <collision>
-    <origin xyz="0.155178 0.088373 0.281393" rpy="0 0 0"/>
+    <origin xyz="0.039426 0.088323 0.196131" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Ankle_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1551,19 +1446,19 @@
 
 <link name="Left_Top_Cover">
   <inertial>
-    <origin xyz="-0.044106804751838535 -0.01009578168435546 0.0004337760046306399" rpy="0 0 0"/>
-    <mass value="0.03"/>
-    <inertia ixx="0.000197" iyy="0.000482" izz="0.000427" ixy="4e-06" iyz="6.6e-05" ixz="6e-06"/>
+    <origin xyz="-0.044106973573281937 -0.010095781684355945 0.00043382090890350944" rpy="0 0 0"/>
+    <mass value="0.02926093594411759"/>
+    <inertia ixx="1.9e-05" iyy="4.6e-05" izz="4.1e-05" ixy="0.0" iyz="6e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.04828 -0.098389 -0.086103" rpy="0 0 0"/>
+    <origin xyz="-0.067472 -0.098439 -0.171365" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.04828 -0.098389 -0.086103" rpy="0 0 0"/>
+    <origin xyz="-0.067472 -0.098439 -0.171365" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Left_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1572,41 +1467,40 @@
 
 <link name="Right_Top_Cover">
   <inertial>
-    <origin xyz="-0.0441068047518393 0.010095781684355959 0.00043377600463069543" rpy="0 0 0"/>
-    <mass value="0.03"/>
-    <inertia ixx="0.000197" iyy="0.000482" izz="0.000427" ixy="-4e-06" iyz="-6.6e-05" ixz="6e-06"/>
+    <origin xyz="-0.04410697357328263 0.010095781684355529 0.00043382090890350944" rpy="0 0 0"/>
+    <mass value="0.029260935944117595"/>
+    <inertia ixx="1.9e-05" iyy="4.6e-05" izz="4.1e-05" ixy="-0.0" iyz="-6e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.04828 0.098389 -0.086103" rpy="0 0 0"/>
+    <origin xyz="-0.067472 0.098339 -0.171365" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
-    <material name="silver"/>
+    <material name="white"/>
   </visual>
   <collision>
-    <origin xyz="0.04828 0.098389 -0.086103" rpy="0 0 0"/>
+    <origin xyz="-0.067472 0.098339 -0.171365" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/Right_Top_Cover.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-
 <link name="imu_mount">
   <inertial>
-    <origin xyz="0.04550033396618963 -0.031248997046936854 0.00964529459469704" rpy="0 0 0"/>
-    <mass value="0.03"/>
-    <inertia ixx="0.000153" iyy="0.000224" izz="0.000359" ixy="0.0" iyz="0.0" ixz="2e-05"/>
+    <origin xyz="0.0455001651447462 -0.031248997046937222 0.009645339498969813" rpy="0 0 0"/>
+    <mass value="0.05"/>
+    <inertia ixx="1.5e-05" iyy="2.1e-05" izz="3.4e-05" ixy="0.0" iyz="0.0" ixz="2e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.148374 -0.031249 -0.073636" rpy="0 0 0"/>
+    <origin xyz="0.032622 -0.031299 -0.158898" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/imu_mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.148374 -0.031249 -0.073636" rpy="0 0 0"/>
+    <origin xyz="0.032622 -0.031299 -0.158898" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/imu_mount.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -1615,39 +1509,229 @@
 
 <link name="imu">
   <inertial>
-    <origin xyz="0.007580740591864421 -0.02090000004746809 0.013691712341032822" rpy="0 0 0"/>
-    <mass value="0.05"/>
-    <inertia ixx="2.8e-05" iyy="1.8e-05" izz="3.1e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+    <origin xyz="0.00758057177042103 -0.02090000004746842 0.013691757245305608" rpy="0 0 0"/>
+    <mass value="0.1"/>
+    <inertia ixx="3e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.139724 -0.0209 -0.088636" rpy="0 0 0"/>
+    <origin xyz="0.023972 -0.02095 -0.173898" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/imu.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="black"/>
   </visual>
   <collision>
-    <origin xyz="0.139724 -0.0209 -0.088636" rpy="0 0 0"/>
+    <origin xyz="0.023972 -0.02095 -0.173898" rpy="0 0 0"/>
     <geometry>
       <mesh filename="package://URDF_description/meshes/imu.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
+<link name="Orin_Nano_Case">
+  <inertial>
+    <origin xyz="0.029168957982362756 -0.0068073288338361335 -0.056036510354157215" rpy="0 0 0"/>
+    <mass value="0.5"/>
+    <inertia ixx="0.000811" iyy="0.000527" izz="0.000367" ixy="-1.4e-05" iyz="1.6e-05" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.114552 0.00995 -0.079856" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Orin_Nano_Case.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.114552 0.00995 -0.079856" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Orin_Nano_Case.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Ear_Holder">
+  <inertial>
+    <origin xyz="-0.005083474443358819 0.013566114477510854 0.022601806221347887" rpy="0 0 0"/>
+    <mass value="0.039089198133902665"/>
+    <inertia ixx="1.3e-05" iyy="9e-06" izz="8e-06" ixy="-1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.058148 0.078092 -0.296639" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Right_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.058148 0.078092 -0.296639" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Right_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Ear_Motor">
+  <inertial>
+    <origin xyz="-0.011316808179028068 0.017245794494632434 -0.01746018512209091" rpy="0 0 0"/>
+    <mass value="0.21407640350583973"/>
+    <inertia ixx="9e-05" iyy="7.9e-05" izz="8.9e-05" ixy="1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079691 0.073953 -0.34196" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Right_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.079691 0.073953 -0.34196" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Right_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Right_Ear">
+  <inertial>
+    <origin xyz="-0.013245226923927031 -0.02342044305839315 0.0059493695257988866" rpy="0 0 0"/>
+    <mass value="0.017330282593122717"/>
+    <inertia ixx="1e-05" iyy="8e-06" izz="5e-06" ixy="-0.0" iyz="1e-06" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.079022 0.073953 -0.322376" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.079022 0.073953 -0.322376" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Right_Ear.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Ear_Holder">
+  <inertial>
+    <origin xyz="-0.005100160108290584 0.014834287503220848 0.02260180622134844" rpy="0 0 0"/>
+    <mass value="0.039089198133902825"/>
+    <inertia ixx="1.3e-05" iyy="9e-06" izz="8e-06" ixy="1e-06" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.058148 -0.032607 -0.296639" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Left_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.058148 -0.032607 -0.296639" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Left_Ear_Holder.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Ear_Motor">
+  <inertial>
+    <origin xyz="-0.02042649381806702 -0.017245390506146825 -0.004450184918545486" rpy="0 0 0"/>
+    <mass value="0.21407639017138763"/>
+    <inertia ixx="9e-05" iyy="7.9e-05" izz="8.9e-05" ixy="-1e-06" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.070598 -0.056868 -0.32895" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Left_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.070598 -0.056868 -0.32895" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Left_Ear_Motor.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Left_Ear">
+  <inertial>
+    <origin xyz="-0.009154399066493998 0.023381574243168238 -0.005328958423356733" rpy="0 0 0"/>
+    <mass value="0.0173058023178019"/>
+    <inertia ixx="1e-05" iyy="8e-06" izz="5e-06" ixy="0.0" iyz="-1e-06" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.083143 -0.056868 -0.333652" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.083143 -0.056868 -0.333652" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Left_Ear.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Rear_Head_Cover">
+  <inertial>
+    <origin xyz="-0.06453168403031345 -0.1294282971545286 0.038085065361107284" rpy="0 0 0"/>
+    <mass value="0.3"/>
+    <inertia ixx="0.001672" iyy="0.001234" izz="0.002699" ixy="0.0" iyz="-0.0" ixz="-0.000203"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Rear_Head_Cover.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="white"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0481 -0.121503 -0.307595" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Rear_Head_Cover.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+
+<link name="Rear_Head_Plate">
+  <inertial>
+    <origin xyz="0.02981528714086086 -0.03832789459357115 -0.007236115750824501" rpy="0 0 0"/>
+    <mass value="0.014787579197992883"/>
+    <inertia ixx="4.2e-05" iyy="6e-06" izz="4.8e-05" ixy="-0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.126801 -0.030396 -0.305774" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.126801 -0.030396 -0.305774" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://URDF_description/meshes/Rear_Head_Plate.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Rigid 4" type="fixed">
-  <origin xyz="-0.148374 0.068751 0.024336" rpy="0 0 0"/>
+  <origin xyz="-0.032622 0.068801 0.109598" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Left_Hip_Yaw_Motor"/>
 </joint>
 
 <joint name="Rigid 5" type="fixed">
-  <origin xyz="-0.148374 -0.068751 0.024336" rpy="0 0 0"/>
+  <origin xyz="-0.032622 -0.068701 0.109598" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Right_Hip_Yaw_Motor"/>
 </joint>
 
 <joint name="Rigid 6" type="fixed">
-  <origin xyz="0.017134 -0.01645 0.044533" rpy="0 0 0"/>
+  <origin xyz="0.132886 -0.0164 0.129795" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Neck_Motor"/>
 </joint>
@@ -1661,25 +1745,25 @@
 </joint>
 
 <joint name="Rigid 8" type="fixed">
-  <origin xyz="-0.075084 0.063 -0.123908" rpy="0 0 0"/>
+  <origin xyz="0.040668 0.06305 -0.038646" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Bottom_Cover"/>
 </joint>
 
 <joint name="Rigid 9" type="fixed">
-  <origin xyz="-0.045104 -0.01775 0.002892" rpy="0 0 0"/>
+  <origin xyz="0.070648 -0.0177 0.088154" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Right_Hip_Yaw_Support"/>
 </joint>
 
 <joint name="Rigid 10" type="fixed">
-  <origin xyz="-0.045104 0.01775 0.002892" rpy="0 0 0"/>
+  <origin xyz="0.070648 0.0178 0.088154" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Left_Hip_Yaw_Support"/>
 </joint>
 
 <joint name="Rigid 11" type="fixed">
-  <origin xyz="-0.157 -0.06 0.063636" rpy="0 0 0"/>
+  <origin xyz="-0.041248 -0.05995 0.148898" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Base_Top_Clamp"/>
 </joint>
@@ -1691,13 +1775,13 @@
 </joint>
 
 <joint name="Rigid 13" type="fixed">
-  <origin xyz="-0.1581 0.090997 0.065042" rpy="0 0 0"/>
+  <origin xyz="-0.042349 0.091047 0.150304" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Left_Holder"/>
 </joint>
 
 <joint name="Rigid 14" type="fixed">
-  <origin xyz="-0.148285 0.084346 0.090657" rpy="0 0 0"/>
+  <origin xyz="-0.032533 0.084396 0.175919" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Top_Base_Frame"/>
 </joint>
@@ -1707,11 +1791,11 @@
   <parent link="Head_Pitch_Motor"/>
   <child link="Head_Pitch_Motor_Support"/>
   <axis xyz="0.0 1.0 0.0"/>
-  <limit lower="-1.0471975511965976" upper="0.8726646259971648" effort="6.0" velocity="45.0"/>
+  <limit lower="-1.0471975511965976" upper="0.5235987755982988" effort="6.0" velocity="45.0"/>
 </joint>
 
 <joint name="Rigid 16" type="fixed">
-  <origin xyz="-0.017969 0.027051 0.074357" rpy="0 0 0"/>
+  <origin xyz="-0.017969 0.027051 0.074557" rpy="0 0 0"/>
   <parent link="Head_Pitch_Motor_Support"/>
   <child link="Head_Yaw_Motor"/>
 </joint>
@@ -1739,7 +1823,7 @@
 </joint>
 
 <joint name="Rigid 20" type="fixed">
-  <origin xyz="-0.0112 0.01 -0.005406" rpy="0 0 0"/>
+  <origin xyz="0.104552 0.01005 0.079856" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Front_Support"/>
 </joint>
@@ -1757,13 +1841,13 @@
 </joint>
 
 <joint name="Rigid 23" type="fixed">
-  <origin xyz="0.058599 -0.056479 0.0" rpy="0 0 0"/>
+  <origin xyz="0.058598 -0.056479 0.0" rpy="0 0 0"/>
   <parent link="Head_Base_Plate"/>
   <child link="Right_Eye"/>
 </joint>
 
 <joint name="Rigid 24" type="fixed">
-  <origin xyz="0.004894 -0.112243 -0.028497" rpy="0 0 0"/>
+  <origin xyz="0.004894 -0.112243 -0.028496" rpy="0 0 0"/>
   <parent link="Front_Support"/>
   <child link="Front_Cover"/>
 </joint>
@@ -1775,25 +1859,25 @@
 </joint>
 
 <joint name="Rigid 26" type="fixed">
-  <origin xyz="0.087134 -0.028034 0.010956" rpy="0 0 0"/>
+  <origin xyz="0.202885 -0.027984 0.096418" rpy="0 0 0"/>
   <parent link="Right_Head_Support"/>
   <child link="Right_Front_Cover"/>
 </joint>
 
 <joint name="Rigid 27" type="fixed">
-  <origin xyz="0.058599 0.109997 0.0" rpy="0 0 0"/>
+  <origin xyz="0.058598 0.109997 0.0" rpy="0 0 0"/>
   <parent link="Head_Base_Plate"/>
   <child link="Left_Eye"/>
 </joint>
 
 <joint name="Rigid 28" type="fixed">
-  <origin xyz="-0.1581 -0.090997 0.065042" rpy="0 0 0"/>
+  <origin xyz="-0.042349 -0.090947 0.150304" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Right_Holder"/>
 </joint>
 
 <joint name="Rigid 29" type="fixed">
-  <origin xyz="-0.027746 0.157732 0.0" rpy="0 0 0"/>
+  <origin xyz="-0.027747 0.157732 0.0" rpy="0 0 0"/>
   <parent link="Head_Base_Plate"/>
   <child link="Left_Head_Support"/>
 </joint>
@@ -1805,7 +1889,7 @@
 </joint>
 
 <joint name="Rigid 31" type="fixed">
-  <origin xyz="-0.157777 0.0 -0.083128" rpy="0 0 0"/>
+  <origin xyz="-0.042025 5e-05 0.002134" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Battery_Holder"/>
 </joint>
@@ -1817,7 +1901,7 @@
 </joint>
 
 <joint name="Rigid 33" type="fixed">
-  <origin xyz="-0.024139 -0.0278 0.14533" rpy="0 0 0"/>
+  <origin xyz="0.091613 -0.02775 0.230592" rpy="0 0 0"/>
   <parent link="Battery_Holder"/>
   <child link="Battery"/>
 </joint>
@@ -1835,33 +1919,9 @@
 </joint>
 
 <joint name="Rigid 36" type="fixed">
-  <origin xyz="0.052962 -0.098148 0.0" rpy="0 0 0"/>
+  <origin xyz="0.052961 -0.098148 0.0" rpy="0 0 0"/>
   <parent link="Head_Base_Plate"/>
   <child link="Face"/>
-</joint>
-
-<joint name="Rigid 37" type="fixed">
-  <origin xyz="-0.160886 -0.05027 0.014508" rpy="0 0 0"/>
-  <parent link="Left_Head_Support"/>
-  <child link="Head_Rear_Cover"/>
-</joint>
-
-<joint name="Rigid 38" type="fixed">
-  <origin xyz="-0.022049 -0.04439 -0.005961" rpy="0 0 0"/>
-  <parent link="Head_Rear_Cover"/>
-  <child link="Rear_Head_Plate"/>
-</joint>
-
-<joint name="Rigid 39" type="fixed">
-  <origin xyz="0.01556 -0.168582 0.012759" rpy="0 0 0"/>
-  <parent link="Head_Rear_Cover"/>
-  <child link="Right_Ear"/>
-</joint>
-
-<joint name="Rigid 40" type="fixed">
-  <origin xyz="0.01556 0.003159 0.012759" rpy="0 0 0"/>
-  <parent link="Head_Rear_Cover"/>
-  <child link="Left_Ear"/>
 </joint>
 
 <joint name="Left_Hip_Yaw" type="revolute">
@@ -1913,7 +1973,7 @@
 </joint>
 
 <joint name="Left_Knee" type="revolute">
-  <origin xyz="0.045459 -0.0025 0.01829" rpy="0 0 0"/>
+  <origin xyz="0.045459 -0.0025 0.018291" rpy="0 0 0"/>
   <parent link="Left_Knee_Motor"/>
   <child link="Left_Lower_Leg"/>
   <axis xyz="0.0 -1.0 0.0"/>
@@ -1921,13 +1981,13 @@
 </joint>
 
 <joint name="Rigid 49" type="fixed">
-  <origin xyz="0.072419 -0.045377 -0.097578" rpy="0 0 0"/>
+  <origin xyz="0.072419 -0.045377 -0.097579" rpy="0 0 0"/>
   <parent link="Left_Lower_Leg"/>
   <child link="Left_Ankle_Cover"/>
 </joint>
 
 <joint name="Rigid 50" type="fixed">
-  <origin xyz="0.009131 -0.00934 -0.124165" rpy="0 0 0"/>
+  <origin xyz="0.009131 -0.00934 -0.124166" rpy="0 0 0"/>
   <parent link="Left_Lower_Leg"/>
   <child link="Left_Ankle_Motor"/>
 </joint>
@@ -1941,7 +2001,7 @@
 </joint>
 
 <joint name="Rigid 52" type="fixed">
-  <origin xyz="0.10668 -0.025682 -0.057538" rpy="0 0 0"/>
+  <origin xyz="0.222432 -0.025632 0.027724" rpy="0 0 0"/>
   <parent link="Left_Foot"/>
   <child link="Left_Foot_Pad"/>
 </joint>
@@ -1953,33 +2013,27 @@
 </joint>
 
 <joint name="Rigid 54" type="fixed">
-  <origin xyz="0.058902 0.0465 -0.075069" rpy="0 0 0"/>
+  <origin xyz="0.058901 0.0465 -0.075069" rpy="0 0 0"/>
   <parent link="Left_Upper_Leg"/>
   <child link="Left_Upper_Leg_Cover"/>
 </joint>
 
 <joint name="Rigid 55" type="fixed">
-  <origin xyz="-0.10624 0.0465 -0.111941" rpy="0 0 0"/>
+  <origin xyz="-0.10624 0.0465 -0.11194" rpy="0 0 0"/>
   <parent link="Left_Upper_Leg"/>
   <child link="Left_Lower_Leg_Cover"/>
 </joint>
 
 <joint name="Rigid 56" type="fixed">
-  <origin xyz="-0.093612 0.011824 0.044456" rpy="0 0 0"/>
+  <origin xyz="0.022141 0.011874 0.129718" rpy="0 0 0"/>
   <parent link="Left_Upper_Leg_Cover"/>
   <child link="Left_Upper_Leg_Detail"/>
 </joint>
 
 <joint name="Rigid 57" type="fixed">
-  <origin xyz="0.061778 0.154093 0.101024" rpy="0 0 0"/>
+  <origin xyz="0.177343 0.156643 0.186285" rpy="0 0 0"/>
   <parent link="Front_Cover"/>
   <child link="Camera_Mount"/>
-</joint>
-
-<joint name="Rigid 58" type="fixed">
-  <origin xyz="-0.725184 0.102193 -0.06274" rpy="0 0 0"/>
-  <parent link="Front_Cover"/>
-  <child link="Front_Grill"/>
 </joint>
 
 <joint name="Rigid 59" type="fixed">
@@ -2037,7 +2091,7 @@
 </joint>
 
 <joint name="Right_Knee" type="revolute">
-  <origin xyz="0.01829 0.0025 -0.045459" rpy="0 0 0"/>
+  <origin xyz="0.01829 0.0025 -0.045458" rpy="0 0 0"/>
   <parent link="Right_Knee_Motor"/>
   <child link="Right_Lower_Leg"/>
   <axis xyz="-0.0 -1.0 -0.0"/>
@@ -2045,7 +2099,7 @@
 </joint>
 
 <joint name="Rigid 68" type="fixed">
-  <origin xyz="0.044717 0.00934 -0.09358" rpy="0 0 0"/>
+  <origin xyz="0.044717 0.00934 -0.093581" rpy="0 0 0"/>
   <parent link="Right_Lower_Leg"/>
   <child link="Right_Ankle_Motor"/>
 </joint>
@@ -2071,25 +2125,25 @@
 </joint>
 
 <joint name="Rigid 72" type="fixed">
-  <origin xyz="0.058902 -0.0465 -0.075069" rpy="0 0 0"/>
+  <origin xyz="0.058901 -0.0465 -0.075069" rpy="0 0 0"/>
   <parent link="Right_Upper_Leg"/>
   <child link="Right_Upper_Leg_Cover"/>
 </joint>
 
 <joint name="Rigid 73" type="fixed">
-  <origin xyz="-0.10624 -0.0465 -0.111941" rpy="0 0 0"/>
+  <origin xyz="-0.10624 -0.0465 -0.11194" rpy="0 0 0"/>
   <parent link="Right_Upper_Leg"/>
-  <child link="Right_Lower_Leg_Cover"/>
+  <child link="Right_Lower_leg-Cover"/>
 </joint>
 
 <joint name="Rigid 74" type="fixed">
-  <origin xyz="-0.093612 -0.011824 0.042716" rpy="0 0 0"/>
+  <origin xyz="0.022141 -0.011774 0.127978" rpy="0 0 0"/>
   <parent link="Right_Upper_Leg_Cover"/>
   <child link="Right_Upper_Leg_Detail"/>
 </joint>
 
 <joint name="Rigid 75" type="fixed">
-  <origin xyz="0.017878 0.045377 -0.162577" rpy="0 0 0"/>
+  <origin xyz="0.017878 0.045377 -0.162578" rpy="0 0 0"/>
   <parent link="Right_Lower_Leg"/>
   <child link="Right_Ankle_Cover"/>
 </joint>
@@ -2116,6 +2170,60 @@
   <origin xyz="0.00865 -0.010349 0.015" rpy="0 0 0"/>
   <parent link="imu_mount"/>
   <child link="imu"/>
+</joint>
+
+<joint name="Rigid 80" type="fixed">
+  <origin xyz="0.01 -0.02 0.0" rpy="0 0 0"/>
+  <parent link="Front_Support"/>
+  <child link="Orin_Nano_Case"/>
+</joint>
+
+<joint name="Rigid 81" type="fixed">
+  <origin xyz="-0.142593 -0.04359 0.0" rpy="0 0 0"/>
+  <parent link="Head_Base_Plate"/>
+  <child link="Right_Ear_Holder"/>
+</joint>
+
+<joint name="Rigid 82" type="fixed">
+  <origin xyz="-0.021543 0.004139 0.045321" rpy="0 0 0"/>
+  <parent link="Right_Ear_Holder"/>
+  <child link="Right_Ear_Motor"/>
+</joint>
+
+<joint name="Rigid 83" type="fixed">
+  <origin xyz="0.000669 0.0 -0.019584" rpy="0 0 0"/>
+  <parent link="Right_Ear_Motor"/>
+  <child link="Right_Ear"/>
+</joint>
+
+<joint name="Rigid 84" type="fixed">
+  <origin xyz="-0.142593 0.067109 0.0" rpy="0 0 0"/>
+  <parent link="Head_Base_Plate"/>
+  <child link="Left_Ear_Holder"/>
+</joint>
+
+<joint name="Rigid 85" type="fixed">
+  <origin xyz="-0.01245 0.024261 0.032311" rpy="0 0 0"/>
+  <parent link="Left_Ear_Holder"/>
+  <child link="Left_Ear_Motor"/>
+</joint>
+
+<joint name="Rigid 86" type="fixed">
+  <origin xyz="-0.012545 0.0 0.004702" rpy="0 0 0"/>
+  <parent link="Left_Ear_Motor"/>
+  <child link="Left_Ear"/>
+</joint>
+
+<joint name="Rigid 87" type="fixed">
+  <origin xyz="-0.008598 -0.001727 0.010956" rpy="0 0 0"/>
+  <parent link="Left_Head_Support"/>
+  <child link="Rear_Head_Cover"/>
+</joint>
+
+<joint name="Rigid 88" type="fixed">
+  <origin xyz="-0.174901 -0.091107 -0.001821" rpy="0 0 0"/>
+  <parent link="Rear_Head_Cover"/>
+  <child link="Rear_Head_Plate"/>
 </joint>
 
 </robot>
